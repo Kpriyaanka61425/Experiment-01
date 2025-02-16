@@ -21,8 +21,8 @@ To analyse the DC operating point,Transient responce and AC analysis of a CMOS-b
 - Amplitude = 50mV<br>
 - Frequency = 1KHz<br>
 3.CIRCUIT DIAGRAM<br><br>
-<img width="411" alt="circuit_diagram png" src="https://github.com/user-attachments/assets/52b78125-900e-42be-91a6-02bb75e9f72c" /><br><br>
-#4.PROCEDURE<br><br>
+<img width="275" alt="circuit_Diagram" src="https://github.com/user-attachments/assets/d350b242-8832-4f79-a2a2-2d2391ef7b72" /><br><br>
+4.PROCEDURE<br><br>
 1.Firstly connect the V<sub>dd</sub> = 1.8V to NMOS drain and ground the source.<br>
 2.Apply a 0.9V sine wave at the gate as input.<br>
 3.Place the R<sub>d</sub> = 1K&Omega; between the drain and output node.<br>
