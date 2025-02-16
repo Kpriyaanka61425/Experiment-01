@@ -53,6 +53,9 @@ Transient analysis is a time-domain simulation technique used to observe the cir
 For this experiment find the gain and output impendence of the circuit.For the same circuit,perform the transient analysis keeping the sinusoidal voltage signal<br>
 DC offset as 0.9V,and amplitude 50mV,and frequency as 1V.<br>
 In the configure analysis select stop time as 3ms.<br><br>
+<img width="639" alt="transient_analysis" src="https://github.com/user-attachments/assets/1853f4ae-215c-4ca4-85b9-3c567d675183" /><br><br>
+
+
 
 
 
