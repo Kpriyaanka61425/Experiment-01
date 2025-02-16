@@ -31,13 +31,19 @@ To analyse the DC operating point,Transient responce and AC analysis of a CMOS-b
 #<ins>DC Simulation</ins><br>
 <img width="640" alt="DC_oparating_point" src="https://github.com/user-attachments/assets/cfc678e3-5112-4f85-948f-8732ca948def" /><br>
 From the simulation: V<sub>in</sub> = 0.9V, r<sub>d</sub> = 1K&Omega;.<br>
-If the power dissipation is 100&mu;W across the resistor,then the current through the resistor is givenby,<br>
+If the power dissipation is 100&mu;W across the resistor,then the current through the resistor is given by,<br>
 I<sub>d</sub> = Power/Voltage = 100&mu;/1.8 = 5.55*10^-5<br>
-
-
-
-
-
+The output equation is given by <br>
+V<sub>out</sub> = V<sub>dd</sub> - (I<sub>d</sub> * R<sub>d</sub>)<br>
+V<sub>out</sub> = 1.8 - ((5.55*10^-5)*(1000)) = 1.7445V<br><br>
+Since th ecalculated current does not match the simulated value,maintain the MOSFET length at 180nm and adust the width to achive the desired current value.<br><br>
+|  Legth (m)   |   Width (m)    |     I<sub>d</sub> (A) |
+|:-------------|:--------------:|-----------------------:
+|   180n       |   500&mu;      | [    0.00179          ]|  
+|   180n       |   100n         |  [   4.810*10^-5      ]|  
+|   180n       |   175n         |  [   5.27*10^-5        ]| 
+|   180n       |   200n         |   [  5.524*10^-5       ]| 
+|   180n       |   203n         |   [  5.55*10^-5         ]|
 
 
 
