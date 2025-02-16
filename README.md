@@ -4,7 +4,7 @@ To analyse the DC operating point,Transient responce and AC analysis of a CMOS-b
 #2.COMPONENTS REQUIRED AND THEIR ROLLS<br><br>
 1.R<sub>d</sub> (Drain Resistor)<br>
 - Provides the required voltage drop to amplify the signal.<br>
-- R<sub>d</sub> = 1K&Omega<br>
+- R<sub>d</sub> = 1K&Omega;<br>
 2.V<sub>d</sub> (Drain Supply Voltage)<br>
 - Provides DC biasing for the NMOS transistor<br>
 - V<sub>d</sub> = 1.8v<br>
@@ -25,12 +25,14 @@ To analyse the DC operating point,Transient responce and AC analysis of a CMOS-b
 #4.PROCEDURE<br><br>
 1.Firstly connect the V<sub>dd</sub> = 1.8V to NMOS drain and ground the source.<br>
 2.Apply a 0.9V sine wave at the gate as input.<br>
-3.Place the R<sub>d</sub> = 1K&Omega between the drain and output node.<br>
+3.Place the R<sub>d</sub> = 1K&Omega; between the drain and output node.<br>
 4.Measure the output across R<sub>d</sub><br>
 5.Analyse DC operating point,Transfer analysis and AC analysis.<br><br>
 #<ins>DC Simulation</ins><br>
 <img width="640" alt="DC_oparating_point" src="https://github.com/user-attachments/assets/cfc678e3-5112-4f85-948f-8732ca948def" /><br>
-From the simulation:V<sub>in</sub> = 0.9V,I<sub>d</sub> = 5.55*10^-5
+From the simulation: V<sub>in</sub> = 0.9V, r<sub>d</sub> = 1K&Omega;.<br>
+If the power dissipation is 100&mu;W across the resistor,then the current through the resistor is givenby,<br>
+I<sub>d</sub> = Power/Voltage = 100&mu;/1.8 = 5.55*10^-5<br>
 
 
 
