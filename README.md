@@ -43,7 +43,7 @@ Since th ecalculated current does not match the simulated value,maintain the MOS
 | 180n       | 100n      | 4.81×10^-5           |
 | 180n       | 175n      | 5.27×10^-5           |
 | 180n       | 200n      | 5.524×10^-5          |
-| 180n       | 203n      | 5.55×10^-5           |<br><br>
+| 180n       | 203n      | 5.55×10^-5           |  <br><br>
 The operating point analysis confirms that the NMOS transistor operates in the saturation region with I<sub>d</sub> = 5.55*10^-5A<br>
 V<sub>ds</sub> = V<sub>d</sub> - V<sub>s</sub> = 1.7445 - 0 = 1.7445V.(since V<sub>out</sub> = V<sub>d</sub> in given above circuit)<br>
 V<sub>ov</sub> = V<sub>gs</sub> - V<sub>tn</sub> = 0.9 - 0.366 = 0.534V.<br>
