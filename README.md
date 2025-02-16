@@ -27,7 +27,13 @@ To analyse the DC operating point,Transient responce and AC analysis of a CMOS-b
 2.Apply a 0.9V sine wave at the gate as input.<br>
 3.Place the R<sub>d</sub> = 1K&Omega between the drain and output node.<br>
 4.Measure the output across R<sub>d</sub><br>
-5.Analyse DC operating point,Transfer analysis and AC analysis.<br>
+5.Analyse DC operating point,Transfer analysis and AC analysis.<br><br>
+#<ins>DC Simulation</ins><br>
+<img width="640" alt="DC_oparating_point" src="https://github.com/user-attachments/assets/cfc678e3-5112-4f85-948f-8732ca948def" /><br>
+From the simulation:V<sub>in</sub> = 0.9V,I<sub>d</sub> = 5.55*10^-5
+
+
+
 
 
 
