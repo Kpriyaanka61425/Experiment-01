@@ -37,14 +37,13 @@ The output equation is given by <br>
 V<sub>out</sub> = V<sub>dd</sub> - (I<sub>d</sub> * R<sub>d</sub>)<br>
 V<sub>out</sub> = 1.8 - ((5.55*10^-5)*(1000)) = 1.7445V<br><br>
 Since th ecalculated current does not match the simulated value,maintain the MOSFET length at 180nm and adust the width to achive the desired current value.<br><br>
-|  Legth (m)   |   Width (m)    |     I<sub>d</sub> (A) |
-|:-------------|:--------------:|-----------------------:
-|   180n       |   500&mu;      | [    0.00179          ]|  
-|   180n       |   100n         |  [   4.810*10^-5      ]|  
-|   180n       |   175n         |  [   5.27*10^-5        ]| 
-|   180n       |   200n         |   [  5.524*10^-5       ]| 
-|   180n       |   203n         |   [  5.55*10^-5         ]|
-
+| Length (m) | Width (m) | I<sub>d</sub> (A) |
+|------------|-----------|-------------------|
+| 180n       | 500µ      | 0.00179           |
+| 180n       | 100n      | 4.81×10^-5        |
+| 180n       | 175n      | 5.27×10^-5        |
+| 180n       | 200n      | 5.524×10^-5       |
+| 180n       | 203n      | 5.55×10^-5        |
 
 
 
