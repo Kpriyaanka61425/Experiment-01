@@ -54,6 +54,22 @@ For this experiment find the gain and output impendence of the circuit.For the s
 DC offset as 0.9V,and amplitude 50mV,and frequency as 1V.<br>
 In the configure analysis select stop time as 3ms.<br><br>
 <img width="639" alt="transient_analysis" src="https://github.com/user-attachments/assets/1853f4ae-215c-4ca4-85b9-3c567d675183" /><br><br>
+From the graph :<br>
+We can observe 180° phase shift in the amplified output voltage wave.<br>
+gain = V<sub>out</sub>/V<sub>in</sub><br>
+gain = 1.7445/0.9 = 1.93833 V/V.<br>
+From the calculations:g<sub>m</sub> = 2(I<sub>d</sub>)/(V<sub>ov</sub>).<br>
+ = 2*5.55*10^-5/0.534 = 2.0786*10-4 Siemens.<br>
+ R<sub>out</sub> = r<sub>d</sub> = 1K&Omega;.<br>
+ Overall gain:A<sub>v</sub> = g<sub>m</sub>*R<sub>out</sub>.<br>
+ A<sub>v</sub> = 1.93833*1000 = 1938.33<br><br>
+ #<ins>AC Analysis</ins><br><br>
+ In this experiment ,we will conduct an AC analysisto evaluate the frequency response of the circuit ,<br>
+ including parameters such as gain,output impendance ,and output impedance and phase shift .By applying a small-signal <br>
+ AC input ,we can access how it behaves under varying frequencies.<br><br>
+ For the same circuit ,in the configure analysis select decade as type of sweep,with starting frequency of 0.1Hz to stop frequency as 1THz.<br><br>
+ 
+ 
 
 
 
