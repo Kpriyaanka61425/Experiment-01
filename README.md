@@ -1,7 +1,7 @@
 <center>LTSpice Simulation of a COMS CIRCUIT </center><br><br><br>
-#1.AIM<br><br>
+1.AIM<br><br>
 To analyse the DC operating point,Transient responce and AC analysis of a CMOS-based circuit using LTspice.<br><br>
-#2.COMPONENTS REQUIRED AND THEIR ROLLS<br><br>
+2.COMPONENTS REQUIRED AND THEIR ROLLS<br><br>
 1.R<sub>d</sub> (Drain Resistor)<br>
 - Provides the required voltage drop to amplify the signal.<br>
 - R<sub>d</sub> = 1K&Omega;<br>
@@ -20,7 +20,7 @@ To analyse the DC operating point,Transient responce and AC analysis of a CMOS-b
 - DC Voltage = 0.9v<br>
 - Amplitude = 50mV<br>
 - Frequency = 1KHz<br>
-#3.CIRCUIT DIAGRAM<br><br>
+3.CIRCUIT DIAGRAM<br><br>
 <img width="411" alt="circuit_diagram png" src="https://github.com/user-attachments/assets/52b78125-900e-42be-91a6-02bb75e9f72c" /><br><br>
 #4.PROCEDURE<br><br>
 1.Firstly connect the V<sub>dd</sub> = 1.8V to NMOS drain and ground the source.<br>
@@ -28,7 +28,7 @@ To analyse the DC operating point,Transient responce and AC analysis of a CMOS-b
 3.Place the R<sub>d</sub> = 1K&Omega; between the drain and output node.<br>
 4.Measure the output across R<sub>d</sub><br>
 5.Analyse DC operating point,Transfer analysis and AC analysis.<br><br>
-#<ins>DC Simulation</ins><br>
+<ins>DC Simulation</ins><br>
 <img width="640" alt="DC_oparating_point" src="https://github.com/user-attachments/assets/cfc678e3-5112-4f85-948f-8732ca948def" /><br>
 From the simulation: V<sub>in</sub> = 0.9V, r<sub>d</sub> = 1K&Omega;.<br>
 If the power dissipation is 100&mu;W across the resistor,then the current through the resistor is given by,<br>
@@ -48,7 +48,7 @@ The operating point analysis confirms that the NMOS transistor operates in the s
 V<sub>ds</sub> = V<sub>d</sub> - V<sub>s</sub> = 1.7445 - 0 = 1.7445V.(since V<sub>out</sub> = V<sub>d</sub> in given above circuit)<br>
 V<sub>ov</sub> = V<sub>gs</sub> - V<sub>tn</sub> = 0.9 - 0.366 = 0.534V.<br>
 i.e V<sub>ds</sub> > V<sub>ov</sub>, So,the above circuit is in the saturation region.<br><br>
-#<ins>Transient Analysis</ins><br><br>
+<ins>Transient Analysis</ins><br><br>
 Transient analysis is a time-domain simulation technique used to observe the circuit response to time varying inputs.<br>
 For this experiment find the gain and output impendence of the circuit.For the same circuit,perform the transient analysis keeping the sinusoidal voltage signal<br>
 DC offset as 0.9V,and amplitude 50mV,and frequency as 1V.<br>
@@ -63,7 +63,7 @@ From the calculations:g<sub>m</sub> = 2(I<sub>d</sub>)/(V<sub>ov</sub>).<br>
  R<sub>out</sub> = r<sub>d</sub> = 1K&Omega;.<br>
  Overall gain:A<sub>v</sub> = g<sub>m</sub>*R<sub>out</sub>.<br>
  A<sub>v</sub> = 1.93833*1000 = 1938.33<br><br>
- #<ins>AC Analysis</ins><br><br>
+ <ins>AC Analysis</ins><br><br>
  In this experiment ,we will conduct an AC analysisto evaluate the frequency response of the circuit ,<br>
  including parameters such as gain,output impendance ,and output impedance and phase shift .By applying a small-signal <br>
  AC input ,we can access how it behaves under varying frequencies.<br><br>
