@@ -36,13 +36,15 @@ I<sub>d</sub> = Power/Voltage = 100&mu;/1.8 = 5.55*10^-5<br>
 The output equation is given by <br>
 V<sub>out</sub> = V<sub>dd</sub> - (I<sub>d</sub> * R<sub>d</sub>)<br>
 V<sub>out</sub> = 1.8 - ((5.55*10^-5)*(1000)) = 1.7445V<br><br>
-Since th ecalculated current does not match the simulated value,maintain the MOSFET length at 180nm and adust the width to achive the desired current value.<br><br>
-| Length (m) | Width (m) | I<sub>d</sub> (A)    |
-|------------|-----------|----------------------|
-| 180n       | 100n      | 4.81×10^-5           |
-| 180n       | 175n      | 5.27×10^-5           |
-| 180n       | 200n      | 5.524×10^-5          |
-| 180n       | 203n      | 5.55×10^-5           |  
+Since th ecalculated current does not match the simulated value,maintain the MOSFET length at 180nm and adust the width to achive the desired current value.<br><br>     
+
+| Length (m) | Width (m) | I<sub>d</sub> (A) |
+|----|------|--------|
+| 180n | 100n | 4.81×10^-5 |
+| 180n | 175n | 5.27×10^-5 |
+| 180n | 200n | 5.524×10^-5 |
+| 180n | 203n | 5.55×10^-5 |     
+
 <br><br>
 The operating point analysis confirms that the NMOS transistor operates in the saturation region with I<sub>d</sub> = 5.55*10^-5A<br>
 V<sub>ds</sub> = V<sub>d</sub> - V<sub>s</sub> = 1.7445 - 0 = 1.7445V.(since V<sub>out</sub> = V<sub>d</sub> in given above circuit)<br>
@@ -61,8 +63,8 @@ gain = 1.7445/50m = 34.89 V/V.<br>
 From the calculations:g<sub>m</sub> = 2(I<sub>d</sub>)/(V<sub>ov</sub>).<br>
  = 2*5.55*10^-5/0.534 = 2.0786*10-4 Siemens.<br>
  R<sub>out</sub> = r<sub>d</sub> = 1K&Omega;.<br>
- Overall gain:A<sub>v</sub> = g<sub>m</sub>*R<sub>out</sub>.<br>
- A<sub>v</sub> =34.89*1000 = 34890<br><br>
+ Overall gain:A<sub>v</sub> = -g<sub>m</sub>*R<sub>out</sub>.<br>
+ A<sub>v</sub> =-34.89*1000 = -34890<br><br>
  <ins>AC Analysis</ins><br><br>
  In this experiment ,we will conduct an AC analysisto evaluate the frequency response of the circuit ,<br>
  including parameters such as gain,output impendance ,and output impedance and phase shift .By applying a small-signal <br>
