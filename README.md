@@ -57,19 +57,27 @@ In the configure analysis select stop time as 3ms.<br><br>
 From the graph :<br>
 We can observe 180° phase shift in the amplified output voltage wave.<br>
 gain = V<sub>out</sub>/V<sub>in</sub><br>
-gain = 1.7445/0.9 = 1.93833 V/V.<br>
+gain = 1.7445/50m = 34.89 V/V.<br>
 From the calculations:g<sub>m</sub> = 2(I<sub>d</sub>)/(V<sub>ov</sub>).<br>
  = 2*5.55*10^-5/0.534 = 2.0786*10-4 Siemens.<br>
  R<sub>out</sub> = r<sub>d</sub> = 1K&Omega;.<br>
  Overall gain:A<sub>v</sub> = g<sub>m</sub>*R<sub>out</sub>.<br>
- A<sub>v</sub> = 1.93833*1000 = 1938.33<br><br>
+ A<sub>v</sub> =34.89*1000 = 34890<br><br>
  <ins>AC Analysis</ins><br><br>
  In this experiment ,we will conduct an AC analysisto evaluate the frequency response of the circuit ,<br>
  including parameters such as gain,output impendance ,and output impedance and phase shift .By applying a small-signal <br>
  AC input ,we can access how it behaves under varying frequencies.<br><br>
  For the same circuit ,in the configure analysis select decade as type of sweep,with starting frequency of 0.1Hz to stop frequency as 1THz.<br><br>
  <img width="959" alt="AC_analysis" src="https://github.com/user-attachments/assets/72ba7142-114e-4085-bce5-646b16946193" /><br><br>.
-<img width="640" alt="DC_oparating_point" src="https://github.com/user-attachments/assets/449b7bda-b97f-4597-8b82-2fa367f1df90" />
+ From the AC analysis graph we obtained gain as -9.277db and the frequency is 210.044GHz.<br><br> 
+ <ins>5.INFERENCE</ins><br><br>
+ - from DC analysis we got the operating point I<sub>d</sub> = 5.55*10^-5 ,and we got V<sub>ds</sub> as 1.7445 which grater than the V<sub>ov</sub><br>
+ By this we conclude that te given above circuit operates in saturation region.<br>
+ - And then from the Transient analysis i have observed the 180° phase shift confirms that the circuit functions as a CMOS inverter. This phase shift occurs because the <br><br>NMOS transistor switches the output to the opposite state of the input. When the input is high, the NMOS conducts, pulling the output low, and vice versa. This <br> behavior validates the inverting property of the CMOS inverter.<br>
+ - And from the AC analysis the graph shows the intersection of two lines at -9.277db gain and  210.044GHz of frequency. This intersection point typically represents the cutoff frequency or the -3dB point, where the gain begins to decrease with increasing frequency.
+ 
+ 
+
 
  
  
