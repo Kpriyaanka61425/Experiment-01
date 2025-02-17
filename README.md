@@ -1,4 +1,8 @@
-<center>LTSpice Simulation of a COMS CIRCUIT </center><br><br><br>
+<center>LTSpice Simulation of a COMS CIRCUIT-01</center><br><br><br>   
+
+- INTRODUCTION   
+It is a common-source NMOS amplifier with a resistive load, designed using the TSMC 180nm CMOS technology. In this configuration, the drain resistor provides the necessary voltage drop required for signal amplification. The input signal is applied to the gate of the NMOS transistor, while the output is taken from the drain. The drain is connected to the positive supply voltage , ensuring proper DC biasing for the transistor's operation. The AC input is modeled as a sine wave to analyze the amplifier's frequency response and phase characteristics. In this configuration, the circuit behaves as an inverting amplifier, introducing a 180-degree phase shift between the input and output signals. This phase shift confirms the typical behavior of common-source amplifiers, which are widely used for voltage amplification in analog circuits. This setup helps in analyzing the gain, bandwidth, and phase shift of the amplifier, which are crucial for designing analog signal processing circuits.
+
  1.AIM <br><br>
 To analyse the DC operating point,Transient responce and AC analysis of a CMOS-based circuit using LTspice.<br><br>
 2.COMPONENTS REQUIRED AND THEIR ROLLS<br><br>  
@@ -74,7 +78,11 @@ From the calculations:g<sub>m</sub> = 2(I<sub>d</sub>)/(V<sub>ov</sub>).<br>
 
 
  
- <center>LTSpice Simulation of a COMS CIRCUIT -02 </center><br><br><br>
+ <center>LTSpice Simulation of a COMS CIRCUIT -02 </center><br><br><br>  
+
+ - It is a CMOS  configuration, employing both NMOS (CMOSN) and PMOS (CMOSP) transistors, also designed using TSMC 180nm technology. In this arrangement, the PMOS transistor is connected to the positive supply voltage , while the NMOS transistor is connected to the ground. The input AC signal is simultaneously applied to the gates of both transistors, resulting in complementary switching action. When the input is high, the NMOS turns on, pulling the output low, whereas the PMOS turns off. Conversely, when the input is low, the PMOS turns on, and the NMOS turns off, pulling the output high. This complementary action results in a digital inverter behavior, effectively providing a 180-degree phase shift between the input and output. CMOS inverters are known for their high noise margins and low power dissipation, making them fundamental building blocks in digital circuits. This configuration also enhances the switching speed and output drive capability, making it suitable for high-speed digital logic applications.
+
+
  1.AIM <br><br>
 To analyse the DC operating point,Transient responce and AC analysis of a CMOS-based circuit using LTspice.<br><br>
 2.COMPONENTS REQUIRED AND THEIR ROLLS<br><br>  
@@ -110,14 +118,16 @@ To maintain the MOSFET length at 180nm and adust the width to achive the desired
 | 180nm | 300n | 200n | 4.79*10^{-5} |
 | 180nm | 380n | 190n | 5.04*10^{-5} |
 | 180nm | 480n | 240n | 5.63*10^{-5} |
-| 180nm | 540n | 223n | 5.5*10^{-5} |    
-For this  above circuit V<sub>d</sub> = V<sub>out</sub> = 1.401V(For both the mosfets). 
-V<sub>gd</sub> = V<sub>g</sub> - V<sub>d</sub>. 
-V<sub>gd</sub> = 0.48 - 1.401 = -0.921V.(for PMOS circuit). 
-V<sub>gd</sub> = 0.9 - 1.401 = -0.501.(For the NMOS circuit). 
-V<sub>gd</sub> > V<sub>tp</sub> (For the PMOS) 
-V<sub>gd</sub> <  V<sub>tp</sub> (For the NMOS) 
-From the above we conclude that the whole circuit is in the saturation region   
+| 180nm | 540n | 223n | 5.5*10^{-5} |   
+
+
+For this  above circuit V<sub>d</sub> = V<sub>out</sub> = 1.401V(For both the mosfets). <br>
+V<sub>gd</sub> = V<sub>g</sub> - V<sub>d</sub>. <br>
+V<sub>gd</sub> = 0.48 - 1.401 = -0.921V.(for PMOS circuit). <br>
+V<sub>gd</sub> = 0.9 - 1.401 = -0.501.(For the NMOS circuit).<br> 
+V<sub>gd</sub> > V<sub>tp</sub> (For the PMOS) <br>
+V<sub>gd</sub> <  V<sub>tp</sub> (For the NMOS) <br>
+From the above we conclude that the whole circuit is in the saturation region  <br><br> 
 
 
 TRANSIENT ANALYSIS   
@@ -162,27 +172,8 @@ From the calculations:g<sub>m</sub> = 2(I<sub>d</sub>)/(V<sub>ov</sub>).(sinse V
 
 
 
- 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
- 
- 
- 
-
-
- 
 
 
 
