@@ -138,7 +138,8 @@ For this experiment find the gain and output impendence of the circuit.For the s
 DC offset as 0.9V,and amplitude 50mV,and frequency as 1V.<br>
 In the configure analysis select stop time as 3ms.<br><br>  
 
-<img width="839" alt="image" src="https://github.com/user-attachments/assets/3aae9efc-6b55-4335-a6c8-31c150eb5cbc" />  
+<img width="839" alt="image" src="https://github.com/user-attachments/assets/166cdc24-1634-4d08-af74-eadd44aa8739" />
+
 
 From the graph :<br>
 We can observe 180° phase shift in the amplified output voltage wave.<br>
