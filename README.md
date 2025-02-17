@@ -69,6 +69,7 @@ From the calculations:g<sub>m</sub> = 2(I<sub>d</sub>)/(V<sub>ov</sub>).<br>
  AC input ,we can access how it behaves under varying frequencies.<br><br>
  For the same circuit ,in the configure analysis select decade as type of sweep,with starting frequency of 0.1Hz to stop frequency as 1THz.<br><br>
  <img width="959" alt="AC_analysis" src="https://github.com/user-attachments/assets/72ba7142-114e-4085-bce5-646b16946193" /><br><br>.
+<img width="640" alt="DC_oparating_point" src="https://github.com/user-attachments/assets/449b7bda-b97f-4597-8b82-2fa367f1df90" />
 
  
  
