@@ -1,5 +1,5 @@
 <center>LTSpice Simulation of a COMS CIRCUIT </center><br><br><br>
-1.AIM<br><br>
+ 1.AIM <br><br>
 To analyse the DC operating point,Transient responce and AC analysis of a CMOS-based circuit using LTspice.<br><br>
 2.COMPONENTS REQUIRED AND THEIR ROLLS<br><br>
 1.R<sub>d</sub> (Drain Resistor)<br>
