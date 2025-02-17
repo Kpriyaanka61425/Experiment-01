@@ -1,9 +1,9 @@
-<center>LTSpice Simulation of a COMS CIRCUIT-01</center><br><br><br>   
+<center><ies>LTSpice Simulation of a COMS CIRCUIT-01</ies></center><br><br><br>   
 
-- INTRODUCTION   
+- <ies>INTRODUCTION</ies>   
 It is a common-source NMOS amplifier with a resistive load, designed using the TSMC 180nm CMOS technology. In this configuration, the drain resistor provides the necessary voltage drop required for signal amplification. The input signal is applied to the gate of the NMOS transistor, while the output is taken from the drain. The drain is connected to the positive supply voltage , ensuring proper DC biasing for the transistor's operation. The AC input is modeled as a sine wave to analyze the amplifier's frequency response and phase characteristics. In this configuration, the circuit behaves as an inverting amplifier, introducing a 180-degree phase shift between the input and output signals. This phase shift confirms the typical behavior of common-source amplifiers, which are widely used for voltage amplification in analog circuits. This setup helps in analyzing the gain, bandwidth, and phase shift of the amplifier, which are crucial for designing analog signal processing circuits.
 
- 1.AIM <br><br>
+ 1.<ies>AIM</ies><br><br>
 To analyse the DC operating point,Transient responce and AC analysis of a CMOS-based circuit using LTspice.<br><br>
 2.COMPONENTS REQUIRED AND THEIR ROLLS<br><br>  
 
@@ -16,10 +16,10 @@ To analyse the DC operating point,Transient responce and AC analysis of a CMOS-b
 | AC Input (SINE source) | To test the signal used to analyze circuit response. <br> DC Voltage = 0.9V <br> Amplitude = 50mV <br> Frequency = 1KHz | 
 
 
-3.CIRCUIT DIAGRAM<br><br>
+3.<ies>CIRCUIT DIAGRAM</ies><br><br>
 <img width="275" alt="circuit_Diagram" src="https://github.com/user-attachments/assets/d350b242-8832-4f79-a2a2-2d2391ef7b72" /><br><br> 
 
-4.PROCEDURE<br><br>
+4.<ies>PROCEDURE</ies><br><br>
 1.Firstly connect the V<sub>dd</sub> = 1.8V to NMOS drain and ground the source.<br>
 2.Apply a 0.9V sine wave at the gate as input.<br>
 3.Place the R<sub>d</sub> = 1K&Omega; between the drain and output node.<br>
@@ -78,12 +78,13 @@ From the calculations:g<sub>m</sub> = 2(I<sub>d</sub>)/(V<sub>ov</sub>).<br>
 
 
  
- <center>LTSpice Simulation of a COMS CIRCUIT -02 </center><br><br><br>  
+ <center><ies>LTSpice Simulation of a COMS CIRCUIT -02</ies></center><br><br><br>   
+ - <ies>INTRODUCTION</ies>
 
  - It is a CMOS  configuration, employing both NMOS (CMOSN) and PMOS (CMOSP) transistors, also designed using TSMC 180nm technology. In this arrangement, the PMOS transistor is connected to the positive supply voltage , while the NMOS transistor is connected to the ground. The input AC signal is simultaneously applied to the gates of both transistors, resulting in complementary switching action. When the input is high, the NMOS turns on, pulling the output low, whereas the PMOS turns off. Conversely, when the input is low, the PMOS turns on, and the NMOS turns off, pulling the output high. This complementary action results in a digital inverter behavior, effectively providing a 180-degree phase shift between the input and output. CMOS inverters are known for their high noise margins and low power dissipation, making them fundamental building blocks in digital circuits. This configuration also enhances the switching speed and output drive capability, making it suitable for high-speed digital logic applications.
 
 
- 1.AIM <br><br>
+ 1.<ies>AIM </ies><br><br>
 To analyse the DC operating point,Transient responce and AC analysis of a CMOS-based circuit using LTspice.<br><br>
 2.COMPONENTS REQUIRED AND THEIR ROLLS<br><br>  
 
@@ -95,7 +96,7 @@ To analyse the DC operating point,Transient responce and AC analysis of a CMOS-b
 | AC Input (SINE source)| To test the signal used to analyze circuit response. <br> Bias Voltage = 0.48V <br> DC Voltage = 0.9V <br> Amplitude = 50mV <br> Frequency = 1KHz | 
 
 
-3.CIRCUIT DIAGRAM<br><br>
+3.<ies>CIRCUIT DIAGRAM</ies><br><br>
 <img width="263" alt="image" src="https://github.com/user-attachments/assets/ee355efd-0f4b-4fcb-a5af-a204e1509952" /><br><br>
 <ins>4.PROCEDURE</ins><br><br>
 1.Firstly connect the V<sub>dd</sub> = 1.8V to PMOS source and ground the source of NMOS.<br>
@@ -130,7 +131,8 @@ V<sub>gd</sub> <  V<sub>tp</sub> (For the NMOS) <br>
 From the above we conclude that the whole circuit is in the saturation region  <br><br> 
 
 
-TRANSIENT ANALYSIS   
+<ies>TRANSIENT ANALYSIS </ies>  
+
 Transient analysis is a time-domain simulation technique used to observe the circuit response to time varying inputs.<br>
 For this experiment find the gain and output impendence of the circuit.For the same circuit,perform the transient analysis keeping the sinusoidal voltage signal<br>
 DC offset as 0.9V,and amplitude 50mV,and frequency as 1V.<br>
@@ -155,6 +157,7 @@ From the calculations:g<sub>m</sub> = 2(I<sub>d</sub>)/(V<sub>ov</sub>).(sinse V
  <img width="838" alt="image" src="https://github.com/user-attachments/assets/b4c331ce-f3f7-4b83-bcf3-b3cf633f42a7" />   
 
  From the graph of AC analysis we obtained the gain as 5db and frequency as 145.064MHz.   
+ 
  <ins>5.INFERENCE</ins><br><br> 
  
  - from DC analysis we got the operating point I<sub>d</sub> = 5.55*10^-5 ,and we got V<sub>gd</sub> as we did the calculations in the DC operating point.<br>
