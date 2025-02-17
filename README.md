@@ -1,25 +1,17 @@
 <center>LTSpice Simulation of a COMS CIRCUIT </center><br><br><br>
  1.AIM <br><br>
 To analyse the DC operating point,Transient responce and AC analysis of a CMOS-based circuit using LTspice.<br><br>
-2.COMPONENTS REQUIRED AND THEIR ROLLS<br><br>
-1.R<sub>d</sub> (Drain Resistor)<br>
-- Provides the required voltage drop to amplify the signal.<br>
-- R<sub>d</sub> = 1K&Omega;<br>
-2.V<sub>d</sub> (Drain Supply Voltage)<br>
-- Provides DC biasing for the NMOS transistor<br>
-- V<sub>d</sub> = 1.8v<br>
-3.W (Transistor Width)<br>
-- affects the transconductance ,influencing gain and bandwidth<br>
-- W = 203nm<br>
-4.MOSFET<br>
-- CMOSN (TSMC 180nm NMOS transistor)<br>
-- length = 180nm<br>
-- Threshold Voltage  = 0.366V<br>
-5.AC Input (SINE source)<br>
-- To test the signal used to analyse circuit response.<br>
-- DC Voltage = 0.9v<br>
-- Amplitude = 50mV<br>
-- Frequency = 1KHz<br>
+2.COMPONENTS REQUIRED AND THEIR ROLLS<br><br>  
+
+| Parameter Name | Role |
+|:------------------:|:--------------------------------:|
+| Rd (Drain Resistor) | Provides the required voltage drop to amplify the signal. <br> Rd = 1KΩ |
+| Vd (Drain Supply Voltage) | Provides DC biasing for the NMOS transistor. <br> Vd = 1.8V |
+| W (Transistor Width) | Affects the transconductance, influencing gain and bandwidth. <br> W = 203nm |
+| MOSFET | CMOSN (TSMC 180nm NMOS transistor) <br> Length = 180nm <br> Threshold Voltage = 0.366V |
+| AC Input (SINE source) | To test the signal used to analyze circuit response. <br> DC Voltage = 0.9V <br> Amplitude = 50mV <br> Frequency = 1KHz | 
+
+
 3.CIRCUIT DIAGRAM<br><br>
 <img width="275" alt="circuit_Diagram" src="https://github.com/user-attachments/assets/d350b242-8832-4f79-a2a2-2d2391ef7b72" /><br><br> 
 
@@ -85,27 +77,16 @@ From the calculations:g<sub>m</sub> = 2(I<sub>d</sub>)/(V<sub>ov</sub>).<br>
  <center>LTSpice Simulation of a COMS CIRCUIT -02 </center><br><br><br>
  1.AIM <br><br>
 To analyse the DC operating point,Transient responce and AC analysis of a CMOS-based circuit using LTspice.<br><br>
-2.COMPONENTS REQUIRED AND THEIR ROLLS<br><br>
-1.V<sub>d</sub> (Drain Supply Voltage)<br>
-- Provides DC biasing for the NMOS transistor<br>
-- V<sub>d</sub> = 1.8v<br>
-2.W (Transistor Width)<br>
-- affects the transconductance ,influencing gain and bandwidth<br>
-- W = 1000nm(For the CMOSP)<br>
-- W = 210nm(For the CMOSN)<br>
-3.MOSFET<br>
-- CMOSN (TSMC 180nm NMOS transistor)<br>
-- length = 180nm<br>
-- Threshold Voltage  = 0.366V<br>
-- CMOSP (TSMC 180nm PMOS transistor)<br>
-- length = 180nm<br>
-- Threshold Voltage  = -0.3906V<br>
-4.AC Input (SINE source)<br>
-- To test the signal used to analyse circuit response.<br>
-- Bias voltage  = 0.48V.<br>
-- DC Voltage = 0.9v<br>
-- Amplitude = 50mV<br>
-- Frequency = 1KHz<br>
+2.COMPONENTS REQUIRED AND THEIR ROLLS<br><br>  
+
+| Parameter Name | Role |
+|:---------------------:|:-----------------------------------------------------:|
+| Vd (Drain Supply Voltage) | Provides DC biasing for the NMOS transistor. <br> Vd = 1.8V |
+| W (Transistor Width) | Affects the transconductance, influencing gain and bandwidth. <br> W = 1000nm (For the CMOSP) <br> W = 210nm (For the CMOSN) |
+| MOSFET | Model:CMOSN (TSMC 180nm NMOS transistor) <br> Length = 180nm <br> Threshold Voltage = 0.366V <br>Modle: CMOSP (TSMC 180nm PMOS transistor) <br> Length = 180nm <br> Threshold Voltage = -0.3906V |
+| AC Input (SINE source)| To test the signal used to analyze circuit response. <br> Bias Voltage = 0.48V <br> DC Voltage = 0.9V <br> Amplitude = 50mV <br> Frequency = 1KHz | 
+
+
 3.CIRCUIT DIAGRAM<br><br>
 <img width="263" alt="image" src="https://github.com/user-attachments/assets/ee355efd-0f4b-4fcb-a5af-a204e1509952" /><br><br>
 <ins>4.PROCEDURE</ins><br><br>
@@ -124,6 +105,12 @@ I<sub>d</sub> = Power/Voltage = 100&mu;/1.8 = 5.55*10^-5A.<br>
 V<sub>out</sub> = 1.40139V.(From the DC operating point simulation ) 
 To maintain the MOSFET length at 180nm and adust the width to achive the desired current value,we have simulated as below table shows.  
 <br>
+| Length (180nm) | Width1 | Width2 | I_D (A) |
+|:--------------:|:------:|:------:|:---------:|
+| 180nm | 300n | 200n | 4.79*10^{-5} |
+| 180nm | 380n | 190n | 5.04*10^{-5} |
+| 180nm | 480n | 240n | 5.63*10^{-5} |
+| 180nm | 540n | 223n | 5.5*10^{-5} |
 
 
 
