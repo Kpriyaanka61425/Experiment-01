@@ -65,7 +65,7 @@ From the calculations:g<sub>m</sub> = 2(I<sub>d</sub>)/(V<sub>ov</sub>).<br>
  AC input ,we can access how it behaves under varying frequencies.<br><br>
  For the same circuit ,in the configure analysis select decade as type of sweep,with starting frequency of 0.1Hz to stop frequency as 1THz.<br><br>
  <img width="959" alt="AC_analysis" src="https://github.com/user-attachments/assets/72ba7142-114e-4085-bce5-646b16946193" /><br><br>.
- From the AC analysis graph we obtained gain as -9.277db and the frequency is 210.044GHz.<br><br> 
+ From the AC analysis graph we obtained gain as 2db and the frequency is 408.83MHz.<br><br> 
  <ins>5.INFERENCE</ins><br><br>
  - from DC analysis we got the operating point I<sub>d</sub> = 5.55*10^-5 ,and we got V<sub>ds</sub> as 1.7445 which grater than the V<sub>ov</sub><br>
  By this we conclude that te given above circuit operates in saturation region.<br>
@@ -110,7 +110,62 @@ To maintain the MOSFET length at 180nm and adust the width to achive the desired
 | 180nm | 300n | 200n | 4.79*10^{-5} |
 | 180nm | 380n | 190n | 5.04*10^{-5} |
 | 180nm | 480n | 240n | 5.63*10^{-5} |
-| 180nm | 540n | 223n | 5.5*10^{-5} |
+| 180nm | 540n | 223n | 5.5*10^{-5} |    
+For this  above circuit V<sub>d</sub> = V<sub>out</sub> = 1.401V(For both the mosfets). 
+V<sub>gd</sub> = V<sub>g</sub> - V<sub>d</sub>. 
+V<sub>gd</sub> = 0.48 - 1.401 = -0.921V.(for PMOS circuit). 
+V<sub>gd</sub> = 0.9 - 1.401 = -0.501.(For the NMOS circuit). 
+V<sub>gd</sub> > V<sub>tp</sub> (For the PMOS) 
+V<sub>gd</sub> <  V<sub>tp</sub> (For the NMOS) 
+From the above we conclude that the whole circuit is in the saturation region   
+
+
+TRANSIENT ANALYSIS   
+Transient analysis is a time-domain simulation technique used to observe the circuit response to time varying inputs.<br>
+For this experiment find the gain and output impendence of the circuit.For the same circuit,perform the transient analysis keeping the sinusoidal voltage signal<br>
+DC offset as 0.9V,and amplitude 50mV,and frequency as 1V.<br>
+In the configure analysis select stop time as 3ms.<br><br>  
+
+<img width="839" alt="image" src="https://github.com/user-attachments/assets/3aae9efc-6b55-4335-a6c8-31c150eb5cbc" />  
+
+From the graph :<br>
+We can observe 180° phase shift in the amplified output voltage wave.<br>
+gain = V<sub>out</sub>/V<sub>in</sub><br>
+gain = 1.401/50m = 28.02 V/V.<br> 
+From the calculations:g<sub>m</sub> = 2(I<sub>d</sub>)/(V<sub>ov</sub>).(sinse V<sub>ov</sub> = o.534(NMOS) and 1.71(PMOS))<br>
+ = 2*5.55*10^-5/0.534 = 2.0786*10-4 Siemens(For NMOS).<br> 
+ = 2*5.55*10^-5/1.71 = 6.4912*10-5 Siemens(For NMOS).<br>   
+
+ <ins>AC Analysis</ins><br><br>
+ In this experiment ,we will conduct an AC analysisto evaluate the frequency response of the circuit ,<br>
+ including parameters such as gain,output impendance ,and output impedance and phase shift .By applying a small-signal <br>
+ AC input ,we can access how it behaves under varying frequencies.<br><br>
+ For the same circuit ,in the configure analysis select decade as type of sweep,with starting frequency of 0.1Hz to stop frequency as 1THz.<br><br>  
+
+ <img width="838" alt="image" src="https://github.com/user-attachments/assets/b4c331ce-f3f7-4b83-bcf3-b3cf633f42a7" />   
+
+ From the graph of AC analysis we obtained the gain as 5db and frequency as 145.064MHz.   
+ <ins>5.INFERENCE</ins><br><br> 
+ 
+ - from DC analysis we got the operating point I<sub>d</sub> = 5.55*10^-5 ,and we got V<sub>gd</sub> as we did the calculations in the DC operating point.<br>
+ By this we conclude that te given above circuit operates in saturation region.<br>
+ - And then from the Transient analysis i have observed the 180° phase shift confirms that the circuit functions as a CMOS inverter. This phase shift occurs <br>
+   because the MOSFET transistor switches the output to the opposite state of the input. When the input is high, the NMOS conducts, pulling the output low, and vice versa.  
+   This behavior validates the inverting property of the CMOS inverter.<br>
+ - And from the AC analysis the graph we obtained gain in db and frequency in MHz, where the gain begins to decrease with increasing frequency.<br><br><br><br><br>
+
+ 
+
+ 
+
+
+
+
+
+ 
+
+
+
 
 
 
