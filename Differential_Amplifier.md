@@ -227,15 +227,17 @@ Procedure :
 
    AC Analysis  
 
-   <img width="958" alt="image" src="https://github.com/user-attachments/assets/8dacadc3-45fb-47b2-9dd3-8e7b43706665" /> 
+   <img width="958" alt="image" src="https://github.com/user-attachments/assets/8dacadc3-45fb-47b2-9dd3-8e7b43706665" />  
+
+   Av = 20log(Vout/Vin) = 
+
+   Input Swing: 
+   
 
    Input maximum swing is given by avarage of Vincmmin and Vincmmam 
-   so,Vincmmim = Vth + Vov1  
-
-
-
-
-
+   so,Vincmmim = Vth + Vov1  = 0.497 + 0.093 = 0.59v
+   and Vincmmax = Vdd - IdRd +Vth = 1.622v
+   and Vincmswing = (1.662+0.59)/2 = 1.106v
 
 
    <img width="959" alt="image" src="https://github.com/user-attachments/assets/01eccee4-a7ab-41cd-80ac-651e5e7098e0" />  
@@ -253,12 +255,18 @@ Procedure :
 
 
 
-   DC analysis 
+   DC analysis : 
+   
 
    ![Screenshot 2025-03-02 235618](https://github.com/user-attachments/assets/1ec590ce-68a5-4775-851b-125ebb2e7c6a)  
 
 
    ![Screenshot 2025-03-02 235658](https://github.com/user-attachments/assets/2358d817-ba7d-4b96-bd3d-38e5db646146)  
+
+   by the above graphs value we can calculate whether the mosfet is in saturation or not 
+   since Vgs1 = 0.59 ,Vov = Vgs - Vth = 0.59 - 0.497 = 0.093v ,Vgd = 1 - 1.1 = 0.6 
+   since Vds>=Vov and Vgd <=Vth so we can conclude CMOS1 is in saturation and also similarly CMOS2 also will be in 
+   satuaration
 
 
 
@@ -288,7 +296,25 @@ Procedure :
    DC 
   <img width="401" alt="image" src="https://github.com/user-attachments/assets/f498a81c-8fc5-43fd-b07c-8fac9c50c333" />
 
-<img width="413" alt="image" src="https://github.com/user-attachments/assets/1338439c-0899-482f-9e8d-d8c0a4f4a7bc" />
+<img width="413" alt="image" src="https://github.com/user-attachments/assets/1338439c-0899-482f-9e8d-d8c0a4f4a7bc" /> 
+
+
+  TRANSIENT Analysis
+
+
+  <img width="959" alt="image" src="https://github.com/user-attachments/assets/f4c28365-bfaa-4a09-a309-2a0e7d565c99" /> 
+
+
+  AC Analysis 
+
+  ![Screenshot 2025-03-03 111729](https://github.com/user-attachments/assets/b9cfc7c0-0e6e-41b2-b046-65c7188c2820)  
+
+  Input swing 
+
+  ![Screenshot 2025-03-03 112104](https://github.com/user-attachments/assets/dea7abbd-bb49-4fbd-b0fe-68d30c90f6cd)
+
+
+
 
 
 
