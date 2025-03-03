@@ -77,9 +77,9 @@ DIFFERENTIAL AMPLIFIER CIRCUITS
    signals is required.
 
   
-   Input and Output Characteristics  
+   TRANSFER Characteristics  
 
-   A typical differential amplifier input-output waveform would show two identical sinusoidal
+   A typical differential amplifier transfer cH waveform would show two identical sinusoidal
    waveforms on the input channels (V1 and V2) with a small voltage difference between them,
    and on the output, a single sinusoidal waveform with an amplitude proportional to the difference
    between the input voltages (V1 - V2), effectively "canceling out" any common-mode noise present on both inputs
