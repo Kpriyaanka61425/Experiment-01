@@ -379,21 +379,17 @@ Procedure :
    INFERENCE 
 
   - Tail Current Source (M3):
-
-   MOSFET M3 operates as an active current source, setting the total current flowing through the differential pair.
-   It enhances common-mode rejection ratio (CMRR) by reducing common-mode gain.
+    MOSFET M3 operates as an active current source, setting the total current flowing through the differential pair.
+    It enhances common-mode rejection ratio (CMRR) by reducing common-mode gain.
   - Differential Operation:
-    
     Transistors M1 and M2 form a differential input pair, amplifying the voltage difference between V2 and V3.
-     The output Vout is taken from the drain of either M1 or M2.
+    The output Vout is taken from the drain of either M1 or M2.
   - Common-Mode Rejection:
-
-   Since M3 supplies a fixed tail current, it prevents the differential pair from responding to common-mode signals, 
-   thereby im proving noise immunity.
- - Efficient Biasing:
-   
-   The bias voltage applied to M3 ensures proper operation in saturation mode, making the amplifier more stable and 
-   predictable.
+    Since M3 supplies a fixed tail current, it prevents the differential pair from responding to common-mode signals, 
+    thereby im proving noise immunity.
+  - Efficient Biasing:
+    The bias voltage applied to M3 ensures proper operation in saturation mode, making the amplifier more stable and 
+    predictable.
 
 
    
