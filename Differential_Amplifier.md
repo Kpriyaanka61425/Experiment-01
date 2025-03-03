@@ -215,7 +215,88 @@ Procedure :
 
    by the above graphs value we can calculate whether the mosfet is in saturation or not 
    since Vgs1 = 0.59 ,Vov = Vgs - Vth = 0.59 - 0.497 = 0.093v ,Vgd = 1 - 1.1 = 0.6 
-   since Vds>=Vov and Vgd <=Vth so we can conclude CMOS1 is in saturation and also similarly CMOS2 also will be in satuaration  
+   since Vds>=Vov and Vgd <=Vth so we can conclude CMOS1 is in saturation and also similarly CMOS2 also will be in satuaration   
+
+
+   TRANSIENT Analysis 
+
+
+   <img width="955" alt="image" src="https://github.com/user-attachments/assets/83cb1742-d497-428e-918b-dab26f7e68dd" /> 
+
+   since the gain = Vout/Vin = 1.7914v 
+
+   AC Analysis  
+
+   <img width="958" alt="image" src="https://github.com/user-attachments/assets/8dacadc3-45fb-47b2-9dd3-8e7b43706665" /> 
+
+   Input maximum swing is given by avarage of Vincmmin and Vincmmam 
+   so,Vincmmim = Vth + Vov1  
+
+
+
+
+
+
+
+   <img width="959" alt="image" src="https://github.com/user-attachments/assets/01eccee4-a7ab-41cd-80ac-651e5e7098e0" />  
+
+
+
+
+   Q2.By Replaceing the resistor with constant current source 
+
+
+
+   Circuit Diagram: 
+
+   <img width="486" alt="mos2dia" src="https://github.com/user-attachments/assets/88c407cd-2d9b-4dba-8b8b-c15c10f2d871" /> 
+
+
+
+   DC analysis 
+
+   ![Screenshot 2025-03-02 235618](https://github.com/user-attachments/assets/1ec590ce-68a5-4775-851b-125ebb2e7c6a)  
+
+
+   ![Screenshot 2025-03-02 235658](https://github.com/user-attachments/assets/2358d817-ba7d-4b96-bd3d-38e5db646146)  
+
+
+
+   TRANSIENT Analysis 
+
+
+   ![Screenshot 2025-03-03 001109](https://github.com/user-attachments/assets/4f9e1f39-f001-46e6-8755-f45e60e4b0c2) 
+
+
+   Ac analysis 
+
+   ![Screenshot 2025-03-02 235200](https://github.com/user-attachments/assets/12069669-20b7-4bb2-92ed-15d2bfc594f6) 
+
+
+   Input Swing 
+
+
+   ![Screenshot 2025-03-03 000050](https://github.com/user-attachments/assets/b9388d38-f57f-48a8-b250-41b826850335) 
+
+
+   Q3.concant current source replace with mosfet   
+
+   <img width="504" alt="image" src="https://github.com/user-attachments/assets/e2fc4853-45e4-4f43-92f4-dec11bbda95d" />  
+
+   
+
+   DC 
+  <img width="401" alt="image" src="https://github.com/user-attachments/assets/f498a81c-8fc5-43fd-b07c-8fac9c50c333" />
+
+<img width="413" alt="image" src="https://github.com/user-attachments/assets/1338439c-0899-482f-9e8d-d8c0a4f4a7bc" />
+
+
+
+
+
+
+
+
    
    
 
