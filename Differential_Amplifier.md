@@ -149,12 +149,16 @@ DIFFERENTIAL AMPLIFIER CIRCUITS
   
  - Transistor characteristics: 
 
-  The specific type of transistors used in the differential pair affects the overall frequency response.   
+  The specific type of transistors used in the differential pair affects the overall frequency response.    
+
+  
 
   
 
   Design differential amplifier for the following specifications Vdd = 2v,p<=1mw,Vicm=1.1v,Vp 0.4v,
-     prform the DC analysis and extract the required parameters. 
+     prform the DC analysis and extract the required parameters.  
+
+     
      
 
    - DESIGN PART:
@@ -173,12 +177,49 @@ DIFFERENTIAL AMPLIFIER CIRCUITS
      
    Q1.Differential amplifier circuit with resistor as tail connected between two sources of the common source amplifier.  
 
-   Circuit Diagram:
+   Circuit Diagram: 
+   
 
-   <img width="598" alt="image" src="https://github.com/user-attachments/assets/64d8e2bf-03ef-47cb-9ad0-7a4236928e87" />  
+   <img width="598" alt="image" src="https://github.com/user-attachments/assets/64d8e2bf-03ef-47cb-9ad0-7a4236928e87" />   
+   
 
-   Components Required:
-   - Rd with 3.5Ω
+   Components Required: 
+
+   - (Rd)Drain Resistor with 3.5Ω
+   - 2CMOSN mosfets with lenth = 180n and width  = 23µ
+   - and also Rss resistor of 800 Ω
+   - after all connect the circuit with respect to given circuit design
+
+     
+Procedure : 
+   
+   - forstly go the ltspice of file then choose the new shcematic then continue building the circuit
+   - as for the circuit first from the components bar search for nmos4 and plce it two types then connect the three voltage sources
+     as Vdd ,Vincm1 and Vincm2 with given specific value
+   - and then using wire commond make connection as for the diagram and then lastly sources of two identical mosfets will join
+     then we hav connect the Rss resistor as tail of those two sources as shown in circuit diagram.
+  - and to do the DC ananlysis choose for Dc operating point to adjust the mosfets specific value
+  - then after go for Transient Ananlysis with stop tyme of 5m or 3m. by this we can calculate gain 
+  - then by choosing the Ac analysis we can find the small signal gain and  and we get to know up to  what frequency it can operate.
+    
+
+ DC analysis: 
+
+
+   <img width="443" alt="image" src="https://github.com/user-attachments/assets/f54aeea7-97e4-479b-9cc5-6b5dd0945718" /> 
+
+   The above diagram shows the design values of the mosfet
+   and to conform the each mosfet is in saturation we go with this below circuit 
+
+   <img width="431" alt="image" src="https://github.com/user-attachments/assets/13afecec-fc68-4be7-a391-0bd5e9c23e75" /> 
+
+   by the above graphs value we can calculate whether the mosfet is in saturation or not 
+   since Vgs1 = 0.59 ,Vov = Vgs - Vth = 0.59 - 0.497 = 0.093v ,Vgd = 1 - 1.1 = 0.6 
+   since Vds>=Vov and Vgd <=Vth so we can conclude CMOS1 is in saturation and also similarly CMOS2 also will be in satuaration  
+   
+   
+
+
 
    
 
