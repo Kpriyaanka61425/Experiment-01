@@ -103,59 +103,11 @@ DIFFERENTIAL AMPLIFIER CIRCUITS
   
    A key feature of a differential amplifier is its ability to reject common-mode noise, which is a signal present on 
    both input channels simultaneously. This is illustrated by the fact that even if significant noise is added to both  
-   input signals, the output will only reflect the difference between them.  
+   input signals, the output will only reflect the difference between them.   
+
    
-   Important considerations: 
-   
-   Phase relationship: 
-   
-   Depending on the circuit design, the output waveform may be in phase with the positive input signal (V1) or inverted relative to it.   
-   
-   Gain: 
-   The amplitude of the output waveform is determined by the gain of the differential amplifier, 
-   which is typically set by the resistor values in the circuit.  
 
-   Frequency Response of Differential Amplifier
-
-   <img width="593" alt="image" src="https://github.com/user-attachments/assets/33837f80-ce93-4781-b361-72291c0050cd" /> 
-
-   A frequency response graph for a differential amplifier typically shows a relatively flat response across a wide range of frequencies,
-   with a gradual roll-off at both very low and very high frequencies, appearing as a "bandpass" characteristic on a Bode plot;
-   meaning the amplifier amplifies signals within a specific frequency range most effectively, with reduced gain at the extreme ends of the spectrum.
-
-   Key points about a differential amplifier frequency response graph: 
-   
-  -  mid-band region:
-   The most important part of the graph is the flat region in the middle, where the gain is nearly constant across a wide range of frequencies,
-    representing the amplifier's optimal operating range.
-
- -  Cut-off frequencies:
-   
-     The points where the gain starts to drop significantly at both low and high frequencies are called the "cut-off frequencies" or "3dB points".
-    
- - Bode plot representation:
-    
-   Frequency response graphs for amplifiers are usually displayed on a Bode plot, where the x-axis is the frequency on a logarithmic scale and
-   the y-axis is the gain in decibels (dB) on a linear scale.
-
-   Factors affecting the frequency response of a differential amplifier:
-   
--  Capacitances within the circuit:
-  
-  Internal parasitic capacitances in the transistors and wiring contribute to the high-frequency roll-off. 
- - Coupling capacitors:
-   
-  Capacitors used to block DC voltage while allowing AC signals can influence the low-frequency response. 
-  
- - Transistor characteristics: 
-
-  The specific type of transistors used in the differential pair affects the overall frequency response.    
-
-  
-
-  
-
-  Design differential amplifier for the following specifications Vdd = 2v,p<=1mw,Vicm=1.1v,Vp 0.4v,
+   Design differential amplifier for the following specifications Vdd = 2v,p<=1mw,Vicm=1.1v,Vp 0.4v,
      prform the DC analysis and extract the required parameters.  
 
      
