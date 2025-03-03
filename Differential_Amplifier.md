@@ -18,7 +18,7 @@ DIFFERENTIAL AMPLIFIER CIRCUITS
 - Wide Range of Applications: Found in communication systems, biomedical devices, 
   and industrial sensors.
 
-  Basic Circuit Configuration  
+  Basic Circuit Configurations  
 
   A simple differential amplifier consists of two transistors (BJT or MOSFET) with 
   their emitters or sources connected together, sharing a common current source.The 
@@ -154,10 +154,40 @@ DIFFERENTIAL AMPLIFIER CIRCUITS
   
 
   Design differential amplifier for the following specifications Vdd = 2v,p<=1mw,Vicm=1.1v,Vp 0.4v,
-     prform the DC analysis and extract the required parameters.
+     prform the DC analysis and extract the required parameters. 
+     
+
+   - DESIGN PART:
+                 Given Vdd= 2v,p=1mw,so,
+                 Iss = p/v = 1m/2 = 0.5mA.
+                 Id = Iss/2 = 0.25mA.
+                 Vp = 0.4v,Rss = Vp/Iss  = 0.4/0.5m = 800Ω,
+                 Voutcm = Vdd - IdRd
+                 rd = (vdd - vo )/Id  = (2-1.1)/0.25m = Rd = 0.36kΩ,
+                 Vd >= Vgs -Vth - Vs = 1-0.3666 = 0.634v
+                 since Vds = Vd - Vs=  = 0.234v
+                 and Vov = Vgs - Vth  = 1-0.4 - 0.366 = 0.234v
+                 since Vds = Vov it is in saturation region.
 
 
-   Q1.Differential amplifier circuit with resistor as tail connected between two sources of the common source amplifier.
+     
+   Q1.Differential amplifier circuit with resistor as tail connected between two sources of the common source amplifier.  
+
+   Circuit Diagram:
+
+   <img width="598" alt="image" src="https://github.com/user-attachments/assets/64d8e2bf-03ef-47cb-9ad0-7a4236928e87" />  
+
+   Components Required:
+   - Rd with 3.5Ω
+
+   
+
+
+   
+
+     
+
+   
 
 
    
