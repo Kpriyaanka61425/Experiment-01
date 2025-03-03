@@ -229,10 +229,13 @@ Procedure :
 
    <img width="958" alt="image" src="https://github.com/user-attachments/assets/8dacadc3-45fb-47b2-9dd3-8e7b43706665" />  
 
-   Av = 20log(Vout/Vin) = 
+   Av = 20log(Vout/Vin) 
+   Vout/Vin = 10^(Av/20) = 10^(5/20) = 1.7782.
 
-   Input Swing: 
+   Input Swing:  
+
    
+   <img width="959" alt="image" src="https://github.com/user-attachments/assets/01eccee4-a7ab-41cd-80ac-651e5e7098e0" /> 
 
    Input maximum swing is given by avarage of Vincmmin and Vincmmam 
    so,Vincmmim = Vth + Vov1  = 0.497 + 0.093 = 0.59v
@@ -240,11 +243,18 @@ Procedure :
    and Vincmswing = (1.662+0.59)/2 = 1.106v
 
 
-   <img width="959" alt="image" src="https://github.com/user-attachments/assets/01eccee4-a7ab-41cd-80ac-651e5e7098e0" />  
+   INFERENCE 
 
+  - The resistor connected at the common source node of the differential pair determines the
+    total tail current based on the applied bias voltage.
+    It provides bias stability to some extent but is influenced by variations in supply voltage and input signals.
+  - The tail current depends on the voltage at the common source node, causing variations in transistor operation.
+  - Any common-mode voltage changes the tail current, allowing some common-mode signals to appear at the output.
+  - The resistor provides a finite impedance, which affects the gain and introduces variations in output.
+  - Using a resistor as a tail in a differential amplifier affects gain stability, common-mode rejection, and linearity due 
+    to its dependence on input voltage variations
 
-
-
+    
    Q2.By Replaceing the resistor with constant current source 
 
 
@@ -273,18 +283,49 @@ Procedure :
    TRANSIENT Analysis 
 
 
-   ![Screenshot 2025-03-03 001109](https://github.com/user-attachments/assets/4f9e1f39-f001-46e6-8755-f45e60e4b0c2) 
+   ![Screenshot 2025-03-03 001109](https://github.com/user-attachments/assets/4f9e1f39-f001-46e6-8755-f45e60e4b0c2)  
+
+   since the gain = Vout/Vin = 8.973v 
 
 
    Ac analysis 
 
-   ![Screenshot 2025-03-02 235200](https://github.com/user-attachments/assets/12069669-20b7-4bb2-92ed-15d2bfc594f6) 
+   ![Screenshot 2025-03-02 235200](https://github.com/user-attachments/assets/12069669-20b7-4bb2-92ed-15d2bfc594f6)  
+
+   Av = 20log(Vout/Vin) 
+   Vout/Vin = 10^(Av/20) = 10^(20/20) = 10
+   
 
 
    Input Swing 
 
 
-   ![Screenshot 2025-03-03 000050](https://github.com/user-attachments/assets/b9388d38-f57f-48a8-b250-41b826850335) 
+   ![Screenshot 2025-03-03 000050](https://github.com/user-attachments/assets/b9388d38-f57f-48a8-b250-41b826850335)  
+
+   Input maximum swing is given by avarage of Vincmmin and Vincmmam 
+   so,Vincmmim = Vth + Vov1  = 0.497 + 0.093 = 0.59v
+   and Vincmmax = Vdd - IdRd +Vth = 1.622v
+   and Vincmswing = (1.662+0.59)/2 = 1.106v  
+
+   INFERENCE 
+
+  - The current source at the common source node of the differential pair ensures a constant tail current, 
+   which is critical for maintaining stable operation.
+  - It sets the total current flowing through the differential MOSFETs, controlling their transconductance 
+  Improved Common-Mode Rejection Ratio (CMRR): Since the tail current remains constant, common-mode signals are effectively 
+  rejected, ensuring only differential signals are amplified.
+- Enhanced Gain Stability: The high output impedance of an ideal current source increases the differential gain, leading to 
+  better amplification.
+- Lower Power Consumption: By providing a fixed current, power efficiency is improved, avoiding unnecessary variations.
+  Reduced Distortion & Better Linearity: Keeps the MOSFETs operating in a stable and predictable region, minimizing 
+  nonlinear effects.
+- An ideal current source provides infinite impedance, leading to perfect bias stability and maximum gain.
+  Practical implementations use a current mirror, cascode current source, or resistor-biased transistor to achieve near- 
+  ideal characteristics.
+- The current source at the MOSFET sources plays a critical role in bias stability, gain control, and common-mode rejection.
+  A well-designed current source improves linearity, efficiency, and signal integrity, making the circuit ideal for high- 
+  precision analog applications
+
 
 
    Q3.concant current source replace with mosfet   
@@ -293,25 +334,70 @@ Procedure :
 
    
 
-   DC 
-  <img width="401" alt="image" src="https://github.com/user-attachments/assets/f498a81c-8fc5-43fd-b07c-8fac9c50c333" />
+   DC Analysis 
 
-<img width="413" alt="image" src="https://github.com/user-attachments/assets/1338439c-0899-482f-9e8d-d8c0a4f4a7bc" /> 
+   <img width="455" alt="image" src="https://github.com/user-attachments/assets/dc14de9a-5bee-40b4-8ad3-c54c4549f856" />  
 
-
-  TRANSIENT Analysis
+   <img width="435" alt="image" src="https://github.com/user-attachments/assets/6414fded-b4a4-4baa-a6e0-781fc482260e" /> 
 
 
-  <img width="959" alt="image" src="https://github.com/user-attachments/assets/f4c28365-bfaa-4a09-a309-2a0e7d565c99" /> 
+   
+   by the above graphs value we can calculate whether the mosfet is in saturation or not 
+   since Vgs1 = 0.588v,Vds = 0.711 ,Vov = Vgs - Vth = 0.588 - 0.497 = 0.091v ,Vgd = 1 - 1.1 = 0.6 
+   since Vds>=Vov and Vgd <=Vth so we can conclude CMOS1 is in saturation and also similarly CMOS2 also will be in 
+   satuaration because CMOS2 is the identicle to CMOS1.
+   Now we will see whether the CMOSN3 is in saturation or not  
+   since Vgs1 = 0.896v,Vds = 0.412 ,Vov = Vgs - Vth = 0.896 - 0.497 = 0.399v ,Vgd = 0.896 - 0.4 = 0.496
+   since Vds>=Vov and Vgd <=Vth so we can conclude CMOS3 is also in saturation 
+
+   
+   TRANSIENT Analysis
+
+
+  <img width="959" alt="image" src="https://github.com/user-attachments/assets/f4c28365-bfaa-4a09-a309-2a0e7d565c99" />  
+
+  since the gain = Vout/Vin = 0.396v 
 
 
   AC Analysis 
 
   ![Screenshot 2025-03-03 111729](https://github.com/user-attachments/assets/b9cfc7c0-0e6e-41b2-b046-65c7188c2820)  
+  Av = 20log(Vout/Vin) 
+  Vout/Vin = 10^(Av/20) = 10^(1/20) = 1.122
 
   Input swing 
 
-  ![Screenshot 2025-03-03 112104](https://github.com/user-attachments/assets/dea7abbd-bb49-4fbd-b0fe-68d30c90f6cd)
+  ![Screenshot 2025-03-03 112104](https://github.com/user-attachments/assets/dea7abbd-bb49-4fbd-b0fe-68d30c90f6cd)  
+
+   Input maximum swing is given by avarage of Vincmmin and Vincmmam 
+   so,Vincmmim = Vth + Vov3   = 0.896 v
+   and Vincmmax = Vdd - IdRd +Vth = 1.622v
+   and Vincmswing = (1.662+0.896)/2 = 2.518v 
+
+   by this above input swing we can observe the clip in the output wave as shown above. 
+
+   INFERENCE 
+
+  - Tail Current Source (M3):
+
+   MOSFET M3 operates as an active current source, setting the total current flowing through the differential pair.
+   It enhances common-mode rejection ratio (CMRR) by reducing common-mode gain.
+  - Differential Operation:
+    
+    Transistors M1 and M2 form a differential input pair, amplifying the voltage difference between V2 and V3.
+     The output Vout is taken from the drain of either M1 or M2.
+  - Common-Mode Rejection:
+
+   Since M3 supplies a fixed tail current, it prevents the differential pair from responding to common-mode signals, 
+   thereby im proving noise immunity.
+ - Efficient Biasing:
+   
+   The bias voltage applied to M3 ensures proper operation in saturation mode, making the amplifier more stable and 
+   predictable.
+
+
+   
+
 
 
 
