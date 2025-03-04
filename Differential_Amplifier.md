@@ -72,43 +72,16 @@ DIFFERENTIAL AMPLIFIER CIRCUITS
    Enhances common-mode rejection ratio (CMRR).
  - Instrumentation amplifier:
    
-   This is a specialized type of differential amplifier designed for high input impedance and
-   excellent common-mode rejection, often used in applications where precise measurement of small
-   signals is required.
-
-  
-   TRANSFER Characteristics  
-
-   A typical differential amplifier transfer cH waveform would show two identical sinusoidal
-   waveforms on the input channels (V1 and V2) with a small voltage difference between them,
-   and on the output, a single sinusoidal waveform with an amplitude proportional to the difference
-   between the input voltages (V1 - V2), effectively "canceling out" any common-mode noise present on both inputs
-
-   <img width="614" alt="image" src="https://github.com/user-attachments/assets/60516adc-ade0-4b51-b55b-e5009089868b" />
-   
-
-   Key points about the waveform:
-   
-   Two input signals:
-   A differential amplifier has two input channels (V1 and V2) which are typically shown as identical sinusoidal
-   waveforms with a small voltage difference between them, representing the differential signal that the amplifier
-   is designed to amplify.
-   
-   Output signal:
-   
-  The output waveform is a single sinusoid with an amplitude proportional to the voltage difference between the two  
-  input signals (V1 - V2), meaning if the input signals are almost identical, the output will be very small.  
-  
-  Common-mode rejection: 
-  
-   A key feature of a differential amplifier is its ability to reject common-mode noise, which is a signal present on 
-   both input channels simultaneously. This is illustrated by the fact that even if significant noise is added to both  
-   input signals, the output will only reflect the difference between them.   
+    This is a specialized type of differential amplifier designed for high input 
+    impedance and
+    excellent common-mode rejection, often used in applications where precise 
+    measurement of small signals is required.
 
    
 
-   Design differential amplifier for the following specifications Vdd = 2v,p<=1mw,Vicm=1.1v,Vp 0.4v,
-     prform the DC analysis and extract the required parameters.  
+  Design differential amplifier for the following specifications Vdd = 
+  2v,p<=1mw,Vicm=1.1v,Vp 0.4v,
+  prform the DC,transfer and AC analysis and extract the required parameters.  
 
      
      
