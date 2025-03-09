@@ -37,46 +37,25 @@ DIFFERENTIAL AMPLIFIER CIRCUITS
   
 -  Differential Mode: The two input signals are equal in magnitude but opposite in phase. 
    The amplifier amplifies their difference. 
- - Common-Mode: The same signal is applied to both inputs.Ideally, the output should be zero,
+   -  a differential amplifier receives two input signals that are equal in magnitude but opposite in phase, meaning Vin1=−Vin2. This results in a nonzero differential input voltage (Vin1−Vin2 ), which the amplifier effectively amplifies.
+![Screenshot 2025-03-03 015718](https://github.com/user-attachments/assets/cc7313bf-4fa6-426e-a7c7-2306b8d5031b)
+
+
+Since the circuit is symmetrical, the total tail current (ISS) remains constant, but it is redistributed between the two transistors based on the input difference. When Vin1 increases,M1 conducts more current while M2 conducts less, and vice versa. This imbalance creates a differential output voltage (𝑉𝑜𝑢𝑡=𝑉𝑜1−𝑉𝑜2n), which is the amplified version of the input difference. The gain in this mode, called differential gain (Ad), is given by 𝐴𝑑=(𝑉𝑜1−𝑉𝑜2)/(𝑉𝑖𝑛1−𝑉𝑖𝑛2)Ad=(Vo1−Vo2)/(Vin1−Vin2) and is typically high. This mode is crucial for signal amplification while rejecting common-mode noise and interference, making differential amplifiers ideal for precise, low-noise applications like sensor interfaces and communication systems.
+- Common-Mode: The same signal is applied to both inputs.Ideally, the output should be zero,
    but practical amplifiers exhibit some small common-mode gain.
+   - common-mode signals refer to identical input voltages applied to both transistors, meaning 
+   𝑉𝑖𝑛1=𝑉𝑖𝑛2Vin1=Vin2, resulting in a differential input voltage of zero (𝑉𝑖𝑛1−𝑉𝑖𝑛2=Vin1−Vin2=0).
 
-  Types of Differential Amplifiers 
+   <img width="510" alt="image" src="https://github.com/user-attachments/assets/8d29b64b-78f7-41cb-8a3c-36bb34a81754" />
 
-  - Single-Ended Differential Amplifier:
-
-    <img width="293" alt="image" src="https://github.com/user-attachments/assets/cac43992-68ef-480b-927c-d94d89971e46" />
-    
-    This refers to a differential amplifier where only one output is taken, even though
-    it might have two input signals, often with one input grounded.
-    Provides moderate common-mode noise rejection.
-    Common in low-cost amplifier circuits.
-  - Double-Ended Differential Amplifier:
-
-    <img width="416" alt="image" src="https://github.com/user-attachments/assets/92c8e41c-157b-49b7-828d-244fc201783d" />
-    
-
-    This is a full differential amplifier, meaning both inputs are used and both outputs
-    are utilized, providing a balanced differential signal.
-    Offers higher noise immunity and common-mode rejection.
-    Used in high-precision circuits.
- - Differential amplifier with active load:
-
-   In this configuration, instead of a passive resistor as the load in the common source circuit
-   of the transistors, an active current source (like another transistor) is used, 
-   which Enhances gain and improves signal-to-noise ratio.
-   Essential in integrated circuit (IC) op-amps.
- - Differential amplifier with constant current source:
-   
-   This design incorporates a constant current source to provide a stable bias current
-   for the differential pair, enhancing performance.
-   Enhances common-mode rejection ratio (CMRR).
- - Instrumentation amplifier:
-   
-    This is a specialized type of differential amplifier designed for high input 
-    impedance and
-    excellent common-mode rejection, often used in applications where precise 
-    measurement of small signals is required.
-
+ 
+   Due to the symmetry of the circuit, where both transistors and drain resistors are identical, the drain currents remain 
+   equal (𝐼𝐷1=𝐼𝐷2=𝐼𝑆𝑆/2ID1=ID2=ISS/2), leading to identical output voltages. As a result, the differential output becomes 
+   zero, effectively rejecting the common-mode signal. This property allows the amplifier to eliminate noise and unwanted DC 
+  offsets without needing external capacitors, making it efficient and space-saving. Ideally,
+  the common-mode gain (𝐴𝑣=(𝑉𝑜1−𝑉𝑜2)/𝑉𝑖𝑐𝑚Av=(Vo1−Vo2)/Vicm) should be zero, meaning no common-mode signal should appear at 
+  the output.
    
 
   Design differential amplifier for the following specifications Vdd = 
@@ -100,12 +79,14 @@ DIFFERENTIAL AMPLIFIER CIRCUITS
 
 
      
-   Q1.Differential amplifier circuit with resistor as tail connected between two sources of the common source amplifier.  
+   Q1.Differential amplifier circuit with resistor as tail connected between two sources of the common source amplifiers.  
 
    Circuit Diagram: 
    
 
-   <img width="598" alt="image" src="https://github.com/user-attachments/assets/64d8e2bf-03ef-47cb-9ad0-7a4236928e87" />   
+   <img width="644" alt="image" src="https://github.com/user-attachments/assets/cea6a71e-b8fe-45da-867d-d7730dc2ab66" />
+
+ 
    
 
    Components Required: 
@@ -146,21 +127,24 @@ Procedure :
    TRANSIENT Analysis 
 
 
-   <img width="955" alt="image" src="https://github.com/user-attachments/assets/83cb1742-d497-428e-918b-dab26f7e68dd" /> 
+   <img width="959" alt="image" src="https://github.com/user-attachments/assets/5665b0fd-e3f9-4275-9757-9ac367ce41ac" />
+ 
 
-   since the gain = Vout/Vin = 1.7914v 
+   since the gain = Vout/Vin = 9.1468v/v 
 
    AC Analysis  
 
-   <img width="958" alt="image" src="https://github.com/user-attachments/assets/8dacadc3-45fb-47b2-9dd3-8e7b43706665" />  
+   <img width="959" alt="image" src="https://github.com/user-attachments/assets/d722552e-2bcf-403f-89fc-82c41a8b9834" />
+  
 
-   Av = 20log(Vout/Vin) 
-   Vout/Vin = 10^(Av/20) = 10^(5/20) = 1.7782.
+   Av = 20db 
+   and the frequency for 3db is 3.484GHz
 
    Input Swing:  
 
    
-   <img width="959" alt="image" src="https://github.com/user-attachments/assets/01eccee4-a7ab-41cd-80ac-651e5e7098e0" /> 
+   <img width="959" alt="image" src="https://github.com/user-attachments/assets/e6738d0c-7a12-4ca5-b7de-35703d254878" />
+
 
    Input maximum swing is given by avarage of Vincmmin and Vincmmam 
    so,Vincmmim = Vth + Vov1  = 0.497 + 0.093 = 0.59v
@@ -170,14 +154,10 @@ Procedure :
 
    INFERENCE 
 
-  - The resistor connected at the common source node of the differential pair determines the
-    total tail current based on the applied bias voltage.
-    It provides bias stability to some extent but is influenced by variations in supply voltage and input signals.
-  - The tail current depends on the voltage at the common source node, causing variations in transistor operation.
-  - Any common-mode voltage changes the tail current, allowing some common-mode signals to appear at the output.
-  - The resistor provides a finite impedance, which affects the gain and introduces variations in output.
-  - Using a resistor as a tail in a differential amplifier affects gain stability, common-mode rejection, and linearity due 
-    to its dependence on input voltage variations
+   - The DC analysis shows that the MOSFETs operate in saturation with balanced drain currents when input voltages are equal.
+   - The transient response confirms proper differential behavior by 180 degree phaseshift.
+   - The AC analysis indicates moderate gain,3db gain and common-mode rejection.
+
 
     
    Q2.By Replaceing the resistor with constant current source 
@@ -186,8 +166,7 @@ Procedure :
 
    Circuit Diagram: 
 
-   <img width="486" alt="mos2dia" src="https://github.com/user-attachments/assets/88c407cd-2d9b-4dba-8b8b-c15c10f2d871" /> 
-
+   <img width="587" alt="image" src="https://github.com/user-attachments/assets/40b5d478-96a3-4f0b-97e9-29ccc390ab9a" />
 
 
    DC analysis : 
@@ -210,16 +189,16 @@ Procedure :
 
    ![Screenshot 2025-03-03 001109](https://github.com/user-attachments/assets/4f9e1f39-f001-46e6-8755-f45e60e4b0c2)  
 
-   since the gain = Vout/Vin = 8.973v 
+   since the gain = Vout/Vin = 8.306v 
 
 
    Ac analysis 
 
    ![Screenshot 2025-03-02 235200](https://github.com/user-attachments/assets/12069669-20b7-4bb2-92ed-15d2bfc594f6)  
 
-   Av = 20log(Vout/Vin) 
-   Vout/Vin = 10^(Av/20) = 10^(20/20) = 10
-   
+  
+   Av = 20db 
+   and the frequency for 3db is 3.484GHz
 
 
    Input Swing 
@@ -232,30 +211,18 @@ Procedure :
    and Vincmmax = Vdd - IdRd +Vth = 1.622v
    and Vincmswing = (1.662+0.59)/2 = 1.106v  
 
-   INFERENCE 
-
-  - The current source at the common source node of the differential pair ensures a constant tail current, 
-   which is critical for maintaining stable operation.
-  - It sets the total current flowing through the differential MOSFETs, controlling their transconductance 
-  Improved Common-Mode Rejection Ratio (CMRR): Since the tail current remains constant, common-mode signals are effectively 
-  rejected, ensuring only differential signals are amplified.
-- Enhanced Gain Stability: The high output impedance of an ideal current source increases the differential gain, leading to 
-  better amplification.
-- Lower Power Consumption: By providing a fixed current, power efficiency is improved, avoiding unnecessary variations.
-  Reduced Distortion & Better Linearity: Keeps the MOSFETs operating in a stable and predictable region, minimizing 
-  nonlinear effects.
-- An ideal current source provides infinite impedance, leading to perfect bias stability and maximum gain.
-  Practical implementations use a current mirror, cascode current source, or resistor-biased transistor to achieve near- 
-  ideal characteristics.
-- The current source at the MOSFET sources plays a critical role in bias stability, gain control, and common-mode rejection.
-  A well-designed current source improves linearity, efficiency, and signal integrity, making the circuit ideal for high- 
-  precision analog applications
+   INFERENCE  
+   
+   - Replacing the resistor with a current source improves bias stability, as seen in the DC analysis.
+   - The transient response is more stable, ensuring better symmetry.
+   - The AC analysis shows increased gain and bandwidth compared to Circuit-1.
 
 
 
    Q3.concant current source replace with mosfet   
 
-   <img width="504" alt="image" src="https://github.com/user-attachments/assets/e2fc4853-45e4-4f43-92f4-dec11bbda95d" />  
+   <img width="617" alt="image" src="https://github.com/user-attachments/assets/143523e6-ad5d-4d70-ab19-34ca0b605f35" />
+  
 
    
 
@@ -279,42 +246,64 @@ Procedure :
    TRANSIENT Analysis
 
 
-  <img width="959" alt="image" src="https://github.com/user-attachments/assets/f4c28365-bfaa-4a09-a309-2a0e7d565c99" />  
+  <img width="959" alt="image" src="https://github.com/user-attachments/assets/68bace4b-d9a2-4306-90e1-9712b5fff9c4" />
+  
 
-  since the gain = Vout/Vin = 0.396v 
+  since the gain = Vout/Vin = 0.8.522v/v .
 
 
   AC Analysis 
 
-  ![Screenshot 2025-03-03 111729](https://github.com/user-attachments/assets/b9cfc7c0-0e6e-41b2-b046-65c7188c2820)  
-  Av = 20log(Vout/Vin) 
-  Vout/Vin = 10^(Av/20) = 10^(1/20) = 1.122
+  <img width="959" alt="image" src="https://github.com/user-attachments/assets/5af5c8ae-d50a-46de-aeb3-9b91e79fd1a8" />
+ 
+   Av = 20db 
+   and the frequency for 3db is 3.484GHz 
+   
 
   Input swing 
 
-  ![Screenshot 2025-03-03 112104](https://github.com/user-attachments/assets/dea7abbd-bb49-4fbd-b0fe-68d30c90f6cd)  
+  <img width="959" alt="image" src="https://github.com/user-attachments/assets/2fba1128-47a7-4014-9169-cf8c1bfb6aac" />
+
 
    Input maximum swing is given by avarage of Vincmmin and Vincmmam 
    so,Vincmmim = Vth + Vov3   = 0.896 v
    and Vincmmax = Vdd - IdRd +Vth = 1.622v
-   and Vincmswing = (1.662+0.896)/2 = 2.518v 
+   and Vincmswing = (1.662+0.896)/2 = 1.259v 
 
    by this above input swing we can observe the clip in the output wave as shown above. 
 
    INFERENCE 
 
-  - Tail Current Source (M3):
-    MOSFET M3 operates as an active current source, setting the total current flowing through the differential pair.
-    It enhances common-mode rejection ratio (CMRR) by reducing common-mode gain.
-  - Differential Operation:
-    Transistors M1 and M2 form a differential input pair, amplifying the voltage difference between V2 and V3.
-    The output Vout is taken from the drain of either M1 or M2.
-  - Common-Mode Rejection:
-    Since M3 supplies a fixed tail current, it prevents the differential pair from responding to common-mode signals, 
-    thereby im proving noise immunity.
-  - Efficient Biasing:
-    The bias voltage applied to M3 ensures proper operation in saturation mode, making the amplifier more stable and 
-    predictable.
+   - The DC analysis confirms that the MOSFET-based current source regulates the tail current effectively.
+   - The transient response maintains signal accuracy with improved performance.
+   - The AC analysis shows higher gain and bandwidth.
+   - The DC sweep analysis validates expected output variations.
+
+
+Q4..Differential amplifier circuit with Drain connected PMOS and NMOS Mosfet as tail connected between two sources of the common source amplifiers  
+
+DC Analysis 
+
+<img width="457" alt="image" src="https://github.com/user-attachments/assets/1f4893cf-847f-4402-bd52-61940a98c559" />
+
+ 
+<img width="454" alt="image" src="https://github.com/user-attachments/assets/7ab37c70-2695-4406-b299-107e98e61003" />
+
+
+By te above information we can calculate the each mosfet is in saturation region or not. 
+ - Since the two PMOS drain connected mosfets will always be in saturation. 
+ - for mosfets of common sourse amplifiers which are identicle to each other
+   Vov = 0.085v,Vds = 0.688v, and VGD = 1-1.12 = 0.12v
+   since Vds >= Vov and VGD <= Vth so both are in saturation region
+ - for the tail Mosfet Vov = 0.422v,Vds = 0.433v , VGD = 0.897-0.432 = 0.465v
+   since the Vds >= Vov and VGD <=Vth ,so tail mosfet is also in the saturation region.
+
+
+TRANSIENT ANALYSIS 
+
+
+     
+
 
 
    
