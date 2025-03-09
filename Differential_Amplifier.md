@@ -299,7 +299,16 @@ By te above information we can calculate the each mosfet is in saturation region
    since the Vds >= Vov and VGD <=Vth ,so tail mosfet is also in the saturation region.
 
 
-TRANSIENT ANALYSIS 
+TRANSIENT ANALYSIS  
+
+<img width="959" alt="image" src="https://github.com/user-attachments/assets/a0514e49-ebd1-4a7f-aa14-48b5e6a4abad" />  
+
+the gain is  = Vout/Vin = 3.6809v. 
+
+AC Analysis: 
+
+
+
 
 
      
