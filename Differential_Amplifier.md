@@ -120,7 +120,7 @@ Procedure :
    <img width="431" alt="image" src="https://github.com/user-attachments/assets/13afecec-fc68-4be7-a391-0bd5e9c23e75" /> 
 
    by the above graphs value we can calculate whether the mosfet is in saturation or not 
-   since Vgs1 = 0.59 ,Vov = Vgs - Vth = 0.59 - 0.497 = 0.093v ,Vgd = 1 - 1.1 = 0.6 
+   since Vgs1 = 0.59 ,Vov = Vgs - Vth = 0.59 - 0.497 = 0.093v ,Vgd = 1 - 1.1 = -0.1v
    since Vds>=Vov and Vgd <=Vth so we can conclude CMOS1 is in saturation and also similarly CMOS2 also will be in satuaration   
 
 
@@ -178,9 +178,9 @@ Procedure :
    ![Screenshot 2025-03-02 235658](https://github.com/user-attachments/assets/2358d817-ba7d-4b96-bd3d-38e5db646146)  
 
    by the above graphs value we can calculate whether the mosfet is in saturation or not 
-   since Vgs1 = 0.59 ,Vov = Vgs - Vth = 0.59 - 0.497 = 0.093v ,Vgd = 1 - 1.1 = 0.6 
-   since Vds>=Vov and Vgd <=Vth so we can conclude CMOS1 is in saturation and also similarly CMOS2 also will be in 
-   satuaration
+   since Vgs1 = 0.59 ,Vov = Vgs - Vth = 0.59 - 0.497 = 0.093v ,Vgd = 1 - 1.1 = -0.1v. 
+   since Vds>=Vov and Vgd <= Vth so we can conclude CMOS1 is in saturation and also similarly CMOS2 also will be in 
+   satuaration.
 
 
 
