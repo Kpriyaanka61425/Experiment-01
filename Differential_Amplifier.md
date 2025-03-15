@@ -137,8 +137,8 @@ Procedure :
    <img width="959" alt="image" src="https://github.com/user-attachments/assets/d722552e-2bcf-403f-89fc-82c41a8b9834" />
   
 
-   Av = 20db 
-   and the frequency for 3db is 3.484GHz
+   Av = 19.89db 
+   and the bandwidth for 3db is 3.484GHz
 
    Input Swing:  
 
@@ -197,8 +197,8 @@ Procedure :
    ![Screenshot 2025-03-02 235200](https://github.com/user-attachments/assets/12069669-20b7-4bb2-92ed-15d2bfc594f6)  
 
   
-   Av = 20db 
-   and the frequency for 3db is 3.484GHz
+   Av = 19.5db 
+   and the bandwith for 3db is 3.484GHz
 
 
    Input Swing 
@@ -256,8 +256,8 @@ Procedure :
 
   <img width="959" alt="image" src="https://github.com/user-attachments/assets/5af5c8ae-d50a-46de-aeb3-9b91e79fd1a8" />
  
-   Av = 20db 
-   and the frequency for 3db is 3.484GHz 
+   Av = 19.83db 
+   and the bandwidth for 3db is 3.484GHz 
    
 
   Input swing 
@@ -303,9 +303,15 @@ TRANSIENT ANALYSIS
 
 <img width="959" alt="image" src="https://github.com/user-attachments/assets/a0514e49-ebd1-4a7f-aa14-48b5e6a4abad" />  
 
-the gain is  = Vout/Vin = 3.6809v. 
+the gain is  = Vout/Vin = 3.809v. 
 
-AC Analysis: 
+AC Analysis:  
+
+<img width="959" alt="image" src="https://github.com/user-attachments/assets/34038481-b9c8-4758-9c89-c17ed5372c2a" /> 
+
+Av = 9.796 
+and 3db bandwidth is 10.5GHz.
+
 
 
 
