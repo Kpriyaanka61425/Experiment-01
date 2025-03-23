@@ -31,7 +31,10 @@ Design and analyse the current mirror circuit for the following specifications.
 Av > -10V/V
 Vdd = 1.8V
 P <= 1mW
-Perform the DC analysis, Transient analysis and AC analysis while maintaining (W/L) same for different values of Length(L). ALso find the maximum output swing and bandwidth.  
+Perform the DC analysis, Transient analysis and AC analysis while maintaining (W/L) same for different values of Length(L). ALso find the maximum output swing and bandwidth. 
+cas1:L = 180nm 
+case2:L = 500nm 
+case3:L = 1µ
 DESIGN: 
 
 1. Determine the drain current (Id)
@@ -43,12 +46,21 @@ DESIGN:
    Iref = Id/2 = 0.555m/2 = 0.277mA
 
 
-FOR ASPECT RATIO OF 1:1   
+Q1:FOR ASPECT RATIO OF 1:1    
+cASE1: L = 180nm
 CIRCUIT DIAGRAM:
 
-<img width="581" alt="image" src="https://github.com/user-attachments/assets/5d073b0d-ebd6-4eec-8905-60770341e67b" />   
+<img width="581" alt="image" src="https://github.com/user-attachments/assets/5d073b0d-ebd6-4eec-8905-60770341e67b" />    
 
-DC Analysis:  
+PROCEDURE:
+- first set up the circuit in LTspice as shown above
+- and apply the V1/Vdd voltage as 1.8(given),and also apply the V2 value as 0.5v.
+- and also apply the current valuve as we have already measured 
+- then apply suitable w/l values for the applyed mosfets
+- and then go to edit simulation in that DC point and click on the run button then we can verify ouer values.
+
+DC Analysis:   
+
 
 We will do the dc analysis to determine the circuit is in operating in saturation region or not . 
 
@@ -69,7 +81,30 @@ TRANSIENT ANALYSIS
 In this analysis we observe the how the circuit behaves with respect to time . 
 
 <img width="959" alt="image" src="https://github.com/user-attachments/assets/9a46c5ec-c5c4-4d9e-83d4-112455f85aee" /> 
-<img width="955" alt="image" src="https://github.com/user-attachments/assets/b7243f9c-098f-491c-ac31-1bfaba424efe" />
+<img width="955" alt="image" src="https://github.com/user-attachments/assets/b7243f9c-098f-491c-ac31-1bfaba424efe" />  
+
+- the expected gain is above 10v/v(given in question)
+- and obtained value is Av = Voutp-p/3m = 27.8166v/v
+
+AC ANALYSIS:
+
+in this we will observe how the circuit components behaves with frequency. 
+
+<img width="959" alt="image" src="https://github.com/user-attachments/assets/6a93c11b-8294-4ba6-a705-90ad0e02b502" />  
+
+the obtained gain = 22.89db
+-3db frequency is 412.308MHz 
+| Gain | Theoretical Value | Practical Value |
+|---|----|---|
+| Av (V/V) | 10 | 27.8166 |
+| Av (dB) | 20 | 22.89 | 
+
+FOR Lenth = 500nm 
+
+DC Analysis 
+
+
+
 
 
 
