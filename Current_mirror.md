@@ -21,7 +21,51 @@
 
 and also we need to check wheather bias voltage is NMOS or PMOS because while biasing the mosfet we will use the same type mosfet to copy the current and also 
 we need to check whether the bias mosfet which connected to refernce current should be diode connected because it needs to convert the current to voltage then the coverted
-voltage will be biased and one more condition we should know while biasing the mosfet is that diode connected mosfet and which will get biased by the reference mosfet both should hae the same Vgs value  and also aspect ratio of both mosftes should also be same then only current mirror occurs perfectly otherwise current mirroring will not occur perfecty.
+voltage will be biased  and that mosfet will converts the voltage into current,and one more condition we should know while biasing the mosfet is that diode connected mosfet and which will get biased by the reference mosfet both should hae the same Vgs value  and also aspect ratio of both mosftes should also be same then only current mirror occurs perfectly otherwise current mirroring will not occur perfecty.  and also long channel mosfets required for mirroring the current rather than the short channel mosfets.
+
+
+Q.PART-A 
+
+Design and analyse the current mirror circuit for the following specifications.
+
+Av > -10V/V
+Vdd = 1.8V
+P <= 1mW
+Perform the DC analysis, Transient analysis and AC analysis while maintaining (W/L) same for different values of Length(L). ALso find the maximum output swing and bandwidth.  
+DESIGN: 
+
+1. Determine the drain current (Id)
+
+   Id = P/Vdd = 1m/1.8 = 0.555mA
+
+2. Determine the reference current (Iref)
+
+   Iref = Id/2 = 0.555m/2 = 0.277mA
+
+
+FOR ASPECT RATIO OF 1:1   
+CIRCUIT DIAGRAM:
+
+<img width="581" alt="image" src="https://github.com/user-attachments/assets/5d073b0d-ebd6-4eec-8905-60770341e67b" />   
+
+DC Analysis:  
+
+ We will do the dc analysis to determine the circuit is in operating in saturation region or not . 
+
+ <img width="387" alt="image" src="https://github.com/user-attachments/assets/def3a2c0-8f8b-4ba8-adc1-2a6e478a4b61" />  
+
+ <img width="424" alt="image" src="https://github.com/user-attachments/assets/97f3349a-fb08-44f3-9ce1-4140b0a79ad9" />  
+
+ 
+
+
+
+
+
+
+
+
+
 
 
    
