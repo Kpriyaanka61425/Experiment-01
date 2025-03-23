@@ -50,11 +50,19 @@ CIRCUIT DIAGRAM:
 
 DC Analysis:  
 
- We will do the dc analysis to determine the circuit is in operating in saturation region or not . 
+We will do the dc analysis to determine the circuit is in operating in saturation region or not . 
 
- <img width="387" alt="image" src="https://github.com/user-attachments/assets/def3a2c0-8f8b-4ba8-adc1-2a6e478a4b61" />  
+<img width="387" alt="image" src="https://github.com/user-attachments/assets/def3a2c0-8f8b-4ba8-adc1-2a6e478a4b61" />    
 
- <img width="424" alt="image" src="https://github.com/user-attachments/assets/97f3349a-fb08-44f3-9ce1-4140b0a79ad9" />  
+the aspect ratio what i had used
+| | **W** | **L**|
+|-|-------|------|
+| **MOSFET1** | 1.2µ | 180n |
+| **MOSFET2** | 1.2µ | 180n |
+| **MOSFET3** | 202.8µ | 180n|
+
+
+<img width="424" alt="image" src="https://github.com/user-attachments/assets/97f3349a-fb08-44f3-9ce1-4140b0a79ad9" />  
 
  
 
