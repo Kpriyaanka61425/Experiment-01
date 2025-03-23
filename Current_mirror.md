@@ -45,9 +45,20 @@ DESIGN:
 
    Iref = Id/2 = 0.555m/2 = 0.277mA
 
+COMPONENTS REQUIRED 
+| **Component** | **Type** | **Value/Specification** | **Purpose/Function** |
+|--------------------|-----------------------|-------------------------|----------------------|
+| **V1** | DC Voltage Source | 1.8V | Provides power to the circuit. |
+| **M1 (CMOSP)**  | PMOS Transistor | CMOS (TSMC 0.18µm) | Reference transistor in the current mirror. |
+| **M2 (CMOSP)** | PMOS Transistor | CMOS (TSMC 0.18µm) | Mirrors the current from M1 to provide stable bias current. |
+| **M3 (CMOSN)** | NMOS Transistor | CMOS (TSMC 0.18µm) | Works as an amplifier, modulating the output signal. |
+| **I1** | DC Current Source | 0.277mA | Provides a constant reference current for the current mirror. |
+| **V2** | AC Voltage Source | SINE(0.8V DC, 50mV AC, 1kHz) | AC signal input for amplification. |
+
+
 
 Q1:FOR ASPECT RATIO OF 1:1    
-cASE1: L = 180nm
+CASE1: L = 180nm
 CIRCUIT DIAGRAM:
 
 <img width="581" alt="image" src="https://github.com/user-attachments/assets/5d073b0d-ebd6-4eec-8905-60770341e67b" />    
