@@ -62,7 +62,16 @@ the aspect ratio what i had used
 | **MOSFET3** | 202.8µ | 180n|
 
 
-<img width="424" alt="image" src="https://github.com/user-attachments/assets/97f3349a-fb08-44f3-9ce1-4140b0a79ad9" />  
+<img width="424" alt="image" src="https://github.com/user-attachments/assets/97f3349a-fb08-44f3-9ce1-4140b0a79ad9" />    
+
+TRANSIENT ANALYSIS 
+
+In this analysis we observe the how the circuit behaves with respect to time . 
+
+<img width="959" alt="image" src="https://github.com/user-attachments/assets/9a46c5ec-c5c4-4d9e-83d4-112455f85aee" /> 
+<img width="955" alt="image" src="https://github.com/user-attachments/assets/b7243f9c-098f-491c-ac31-1bfaba424efe" />
+
+
 
  
 
