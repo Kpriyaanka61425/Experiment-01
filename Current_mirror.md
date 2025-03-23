@@ -101,7 +101,90 @@ the obtained gain = 22.89db
 
 FOR Lenth = 500nm 
 
-DC Analysis 
+DC Analysis  
+
+<img width="395" alt="image" src="https://github.com/user-attachments/assets/e613e0a0-2522-49df-9138-611c21d3513c" />  
+
+the aspect ratio what i had used
+| | **W** | **L**|
+|-|-------|------|
+| **MOSFET1** | 5µ | 500n |
+| **MOSFET2** | 5µ | 500n |
+| **MOSFET3** | 221.8µ | 500n| 
+
+<img width="434" alt="image" src="https://github.com/user-attachments/assets/5aabd4b0-409a-4dcc-8123-82887d0574ab" /> 
+
+TRANSIENT ANALYSIS:
+
+<img width="956" alt="image" src="https://github.com/user-attachments/assets/dbddc1af-8ec7-4135-9261-5ea8c45b6e01" />  
+
+<img width="959" alt="image" src="https://github.com/user-attachments/assets/0e23c9da-7ca5-4f57-a7c0-4ba2b92514d4" /> 
+
+- the expected gain is above 10v/v(given in question)
+- and obtained value is Av = Voutp-p/3m = 126.57v/v
+
+  AC ANALYSIS
+
+  <img width="956" alt="image" src="https://github.com/user-attachments/assets/d334ed88-5005-4399-b96d-426ee0cf8f6d" />
+
+the obtained gain = 36.537db
+-3db frequency is 73.044MHz 
+| Gain | Theoretical Value | Practical Value |
+|---|----|---|
+| Av (V/V) | 10 | 126.57 |
+| Av (dB) | 20 | 36.537 | 
+
+FOR Length = 1µ 
+
+DC ANALYSIS
+
+<img width="381" alt="image" src="https://github.com/user-attachments/assets/884ce6c1-58dd-4cbe-b5f3-e73de48432f5" />  
+
+the aspect ratio what i had used
+| | **W** | **L**|
+|-|-------|------|
+| **MOSFET1** | 8µ | 1µ |
+| **MOSFET2** | 8µ | 1µ |
+| **MOSFET3** | 261.58µ | 1µ |  
+
+<img width="414" alt="image" src="https://github.com/user-attachments/assets/960db0bf-e1ec-4736-95ce-75cf51a0eff8" /> 
+
+
+TRANSIENT ANALYSIS
+
+<img width="959" alt="image" src="https://github.com/user-attachments/assets/87bdebd2-079b-4c70-a328-b1dad41395ab" />  
+
+<img width="959" alt="image" src="https://github.com/user-attachments/assets/9a61e9d3-3efb-4667-9fe6-9cd6c3e1fe7e" />   
+
+- the expected gain is above 10v/v(given in question)
+- and obtained value is Av = Voutp-p/3m = 78.26v/v
+
+AC ANALYSIS 
+
+<img width="958" alt="image" src="https://github.com/user-attachments/assets/01085a91-41b1-4e03-821c-21b00f52d3ad" /> 
+
+the obtained gain = 29.226db
+-3db frequency is 107.82MHz 
+| Gain | Theoretical Value | Practical Value |
+|---|----|---|
+| Av (V/V) | 10 | 78.26 |
+| Av (dB) | 20 | 29.226 |  
+
+FOR 
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
