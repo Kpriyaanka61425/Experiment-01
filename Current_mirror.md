@@ -181,7 +181,8 @@ the obtained gain = 29.226db
 | Av (V/V) | 10 | 78.26 |
 | Av (dB) | 20 | 29.226 |  
 
-FOR 
+FOR ASPECT RATIO OF 1:2 
+
 
   
 
