@@ -201,14 +201,170 @@ the aspect ratio what i had used
 
 TRANSIENT ANALYSIS 
 
-In this analysis we observe the how the circuit behaves with respect to time .  
+In this analysis we observe the how the circuit behaves with respect to time .    
+
+<img width="956" alt="image" src="https://github.com/user-attachments/assets/099aba17-5c1d-4881-a4fc-ff2a95c7d10e" />
+
+
+
+<img width="956" alt="image" src="https://github.com/user-attachments/assets/96f8cd7a-c746-4c05-9e24-12ea7517c145" />  
+
+- the expected gain is above 10v/v(given in question)
+- and obtained value is Av = Voutp-p/3m = 0.202367mV/V.
+
+AC ANALYSIS
+
+<img width="959" alt="image" src="https://github.com/user-attachments/assets/45bc0654-b25a-400c-88a2-8e326554bdc7" />
+
+the obtained gain = 29.84db
+-3db frequency is 228.27532MHz.
+| Gain | Theoretical Value | Practical Value |
+|---|----|---|
+| Av (V/V) | 10 | 0.202367m |
+| Av (dB) | 20 | 29.89 |   
+
+FOR Lenth = 500nm  
+
+<img width="397" alt="image" src="https://github.com/user-attachments/assets/47d60d92-937b-4177-a5da-cd33934a1d34" /> 
+
+the aspect ratio what i had used
+| | **W** | **L**|
+|-|-------|------|
+| **MOSFET1** | 20µ | 500n |
+| **MOSFET2** | 40µ | 500n |
+| **MOSFET3** | 262µ | 500n|   
+
+<img width="421" alt="image" src="https://github.com/user-attachments/assets/1a1f30d5-fcda-4a08-9e2c-987b6a41e0ed" /> 
 
 TRANSIENT ANALYSIS 
 
-In this analysis we observe the how the circuit behaves with respect to time . 
+<img width="958" alt="image" src="https://github.com/user-attachments/assets/a7294c2c-d7a2-4e74-97fc-d3836a088452" /> 
+
+<img width="956" alt="image" src="https://github.com/user-attachments/assets/c4765be0-e8ff-41fa-a4d4-7fadca7ea364" /> 
+
+- the expected gain is above 10v/v(given in question)
+- and obtained value is Av = Voutp-p/3m = 0.45mV/V.
+
+AC ANALYSIS 
+
+<img width="956" alt="image" src="https://github.com/user-attachments/assets/1280a44b-ca6d-4a0d-b375-13dd3e47fa1f" /> 
+
+the obtained gain = 38.774db
+-3db frequency is 43.976MHz.
+| Gain | Theoretical Value | Practical Value |
+|---|----|---|
+| Av (V/V) | 10 | 0.45m |
+| Av (dB) | 20 | 38.774 |  
+
+FOR LENGTH L = 1µ 
+
+DC ANALYSIS 
+
+<img width="397" alt="image" src="https://github.com/user-attachments/assets/18b4b853-09fc-4861-9a6b-6bddbf4907df" /> 
 
 
-<img width="956" alt="image" src="https://github.com/user-attachments/assets/96f8cd7a-c746-4c05-9e24-12ea7517c145" />
+the aspect ratio what i had used
+| | **W** | **L**|
+|-|-------|------|
+| **MOSFET1** | 20µ | 1µ |
+| **MOSFET2** | 40µ | 1µ |
+| **MOSFET3** | 270.5µ | 1µ |  
+
+<img width="424" alt="image" src="https://github.com/user-attachments/assets/1fcc7550-99fa-4b0e-ba27-bd1b9ad1b87f" /> 
+
+TRANSIENT ANALYSIS  
+
+<img width="956" alt="image" src="https://github.com/user-attachments/assets/80b37a91-7962-4bce-97de-5ad2940c74b9" />
+
+
+<img width="955" alt="image" src="https://github.com/user-attachments/assets/371fd1d4-c9b6-40d7-ab48-ff73c274e7f3" />  
+
+- the expected gain is above 10v/v(given in question)
+- and obtained value is Av = Voutp-p/3m = 0.264233µV/V.
+
+AC ANALYSIS 
+
+<img width="949" alt="image" src="https://github.com/user-attachments/assets/e77b54e0-e620-4ca8-8bb2-9764279adb2f" /> 
+
+the obtained gain = 25.777db
+-3db frequency is 139.87131MHz
+| Gain | Theoretical Value | Practical Value |
+|---|----|---|
+| Av (V/V) | 10 | 0.264233µ |
+| Av (dB) | 20 | 25.777 |    
+
+
+FOR ASPECT RATIO OF 2:1   
+
+to do this first Total current is 0.55mA, it is divided into 3 parts, where 1/3 of current is its output current I<sub>d</sub> and remaining is the reference current I<sub>ref</sub>. <br>
+i.e 0.55m / 3 = 0.183mA. <br>
+Hence, I<sub>ref</sub> = 0.3667mA and I<sub>d</sub> = 0.183mA <br><br> 
+
+
+CASE1: L = 180nm  
+
+DC ANALYSIS 
+
+<img width="667" alt="image" src="https://github.com/user-attachments/assets/1f21aefc-6020-4e84-90c4-00e3c5388d57" />  
+
+the aspect ratio what i had used
+| | **W** | **L**|
+|-|-------|------|
+| **MOSFET1** | 20µ | 180n |
+| **MOSFET2** | 10µ | 180n |
+| **MOSFET3** | 70.5µ | 180n| 
+
+TRANSIENT ANALYSIS 
+
+<img width="959" alt="image" src="https://github.com/user-attachments/assets/f73852cf-218c-4304-b52a-04799372fb60" /> 
+
+<img width="957" alt="image" src="https://github.com/user-attachments/assets/ef72a8b2-42ce-403b-9711-bc5646fb4184" />  
+
+- the expected gain is above 10v/v(given in question)
+- and obtained value is Av = Voutp-p/3m = 302.2V/V
+
+AC ANALYSIS 
+
+<img width="959" alt="image" src="https://github.com/user-attachments/assets/f8fdbd43-d1df-426f-8ae3-8f6dcae8c2d1" /> 
+
+the obtained gain = 29.717db
+-3db frequency is 282.219MHz
+| Gain | Theoretical Value | Practical Value |
+|---|----|---|
+| Av (V/V) | 10 | 302.2 |
+| Av (dB) | 20 | 29.717 |  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
 
 
 
