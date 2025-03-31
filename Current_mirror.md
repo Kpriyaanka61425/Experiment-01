@@ -181,7 +181,41 @@ the obtained gain = 29.226db
 | Av (V/V) | 10 | 78.26 |
 | Av (dB) | 20 | 29.226 |  
 
-FOR ASPECT RATIO OF 1:2 
+FOR ASPECT RATIO OF 1:2   
+
+to do this first Total current is 0.55mA, it is divided into 3 parts, where 1/3 of current is its reference current I<sub>ref</sub> and remaining is the output current I<sub>d</sub>. <br>
+i.e 0.55m / 3 = 0.183mA. <br>
+Hence, I<sub>ref</sub> = 0.183mA and I<sub>d</sub> = 0.3667mA <br><br>
+CASE1: L = 180nm 
+
+<img width="725" alt="image" src="https://github.com/user-attachments/assets/714a0cff-9333-45a0-a1b2-6e2714cf9f32" /> 
+
+the aspect ratio what i had used
+| | **W** | **L**|
+|-|-------|------|
+| **MOSFET1** | 12µ | 180n |
+| **MOSFET2** | 24µ | 180n |
+| **MOSFET3** | 147µ | 180n| 
+
+<img width="440" alt="image" src="https://github.com/user-attachments/assets/9ef5e764-d896-44b2-bac8-02a520f30a47" />  
+
+TRANSIENT ANALYSIS 
+
+In this analysis we observe the how the circuit behaves with respect to time .  
+
+TRANSIENT ANALYSIS 
+
+In this analysis we observe the how the circuit behaves with respect to time . 
+
+
+<img width="956" alt="image" src="https://github.com/user-attachments/assets/96f8cd7a-c746-4c05-9e24-12ea7517c145" />
+
+
+
+
+
+
+
 
 
   
