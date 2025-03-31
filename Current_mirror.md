@@ -186,7 +186,10 @@ FOR ASPECT RATIO OF 1:2
 to do this first Total current is 0.55mA, it is divided into 3 parts, where 1/3 of current is its reference current I<sub>ref</sub> and remaining is the output current I<sub>d</sub>. <br>
 i.e 0.55m / 3 = 0.183mA. <br>
 Hence, I<sub>ref</sub> = 0.183mA and I<sub>d</sub> = 0.3667mA <br><br>
-CASE1: L = 180nm 
+CASE1: L = 180nm  
+
+DC Analysis:  
+
 
 <img width="725" alt="image" src="https://github.com/user-attachments/assets/714a0cff-9333-45a0-a1b2-6e2714cf9f32" /> 
 
@@ -407,7 +410,9 @@ the obtained gain = 41.337db
 | Gain | Theoretical Value | Practical Value |
 |---|----|---|
 | Av (V/V) | 10 | 673.8 |
-| Av (dB) | 20 | 41.337 | . 
+| Av (dB) | 20 | 41.337 | .  
+
+Q2.
 
 
 
