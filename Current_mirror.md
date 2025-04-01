@@ -425,7 +425,7 @@ Comparison Table for Vx and Vout of different apsct ratio.
 | 1u | 0.150377 | 1.41296  | 0.663483 |
 
 
-Q2.
+Q2.Design the differential amplifier using the same design specification as experiment 3(differential amplifier). Perform DC, Transient, AC analysis for the above question.
 
 
 
