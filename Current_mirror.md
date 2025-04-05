@@ -451,7 +451,7 @@ TRANSIENT ANALYSIS
 
 <img width="959" alt="image" src="https://github.com/user-attachments/assets/990e9acf-3b71-4b05-bcd7-6dbc1d27b802" /> 
 
-- Obtained value is Av = Voutp-p/3m = 5.6V/V.
+- Obtained gain value is Av = Voutp-p/3m = 5.6V/V.
 
 
 AC ANALYSIS 
@@ -460,7 +460,7 @@ AC ANALYSIS
 
 - the obtained gain = 34.7db.
   
-- 3db frequency is 479.22551MHz. 
+- -3db frequency is 479.22551MHz. 
 
 
 
