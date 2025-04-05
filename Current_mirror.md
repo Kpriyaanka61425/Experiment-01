@@ -2,8 +2,10 @@
    DESIGN AND ANALYSIS OF CURRENT MIRRORS CIRCUITS  
 
 
-   In this current mirror circuits we use the reference current source known as Iref(Golden Reference Current Source) designed by Bandgab Reference circuit,
-   which mainly used to copy the reference current into another branch of the circuit with high accuracy.without using the voltage source to bias the circuit. 
+   In this current mirror circuits we use the reference current source known as Iref(Golden Reference Current Source) 
+   designed by Bandgab Reference circuit,
+   which mainly used to copy the reference current into another branch of the circuit with high accuracy.without using the 
+   voltage source to bias the circuit. 
 
 
   NEED OF USING CURRENT MIRROR INSTEAD OF USING VOLTAGE SOURCE TO BIAS ANY MOSFET
@@ -412,7 +414,7 @@ AC ANALYSIS
 | Av (V/V) | 10 | 673.8 |
 | Av (dB) | 20 | 41.337 | .   
 
-Comparison Table for Vx and Vout of different apsct ratio. 
+Comparison Table for Vx and Vout of different aspect ratio. 
 | Length | 1:1 | 1:2 | 2:1 |
 |---------|----------|----------|----------|
 | **Vx** | | | |
@@ -456,8 +458,9 @@ AC ANALYSIS
 
 <img width="959" alt="image" src="https://github.com/user-attachments/assets/3298af2e-4a04-4b54-b7af-5245e17ae4a6" />   
 
--the obtained gain = 34.7db
--3db frequency is 479.22551MHz. 
+- the obtained gain = 34.7db.
+  
+- 3db frequency is 479.22551MHz. 
 
 
 
