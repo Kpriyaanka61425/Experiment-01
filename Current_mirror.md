@@ -405,7 +405,7 @@ AC ANALYSIS
 
 <img width="959" alt="image" src="https://github.com/user-attachments/assets/a0beda24-8d47-4214-a9c9-6dcf24a8d0c0" />  
 
-the obtained gain = 41.337db
+-the obtained gain = 41.337db
 -3db frequency is 29.48289MHz 
 | Gain | Theoretical Value | Practical Value |
 |---|----|---|
@@ -422,10 +422,53 @@ Comparison Table for Vx and Vout of different apsct ratio.
 | **Vout** | | | |
 | 100n | 0.131488 | 1.02024  | 1.06641  |
 | 500n | 0.295387 | 0.953832 | 0.893264 |
-| 1u | 0.150377 | 1.41296  | 0.663483 |
+| 1u | 0.150377 | 1.41296  | 0.663483 | 
 
 
-Q2.Design the differential amplifier using the same design specification as experiment 3(differential amplifier). Perform DC, Transient, AC analysis for the above question.
+PART B): 
+
+Design the differential amplifier using the same design specification as experiment-03(differential amplifier). Perform DC, Transient, AC analysis for the above question. 
+
+From exeriment number three we have information like Vdd = 2V,
+the current through the circuite should be 0.5mA, hence Iss should be of 0.25mA.
+But as we are supplying Iss through current mirror circuit, which as 1:2 aspect ratio, the Iref which is given to MOSFET 6 in the circuit has 0.25mA. 
+
+CIRCUIT DIAGRAM: 
+
+<img width="595" alt="image" src="https://github.com/user-attachments/assets/5b6983ba-de78-4001-99a8-8eb2a2b22cee" /> 
+
+DC ANALYSIS:  
+
+<img width="410" alt="image" src="https://github.com/user-attachments/assets/20a5c115-6455-4db0-8b3e-10964fb506b7" /> 
+
+TRANSIENT ANALYSIS 
+
+<img width="959" alt="image" src="https://github.com/user-attachments/assets/c76bfeb1-26aa-4773-9fae-f90476e448c1" />   
+
+
+
+<img width="959" alt="image" src="https://github.com/user-attachments/assets/990e9acf-3b71-4b05-bcd7-6dbc1d27b802" /> 
+
+- Obtained value is Av = Voutp-p/3m = 5.6V/V.
+
+
+AC ANALYSIS 
+
+<img width="959" alt="image" src="https://github.com/user-attachments/assets/3298af2e-4a04-4b54-b7af-5245e17ae4a6" />   
+
+-the obtained gain = 34.7db
+-3db frequency is 479.22551MHz. 
+
+
+
+
+
+
+
+
+
+
+
 
 
 
