@@ -106,7 +106,24 @@ by above all fuction it will continuonsly generates Square wave at output pin
 
  by Charging and discharging controls HIGH and LOW time
 
- and Frequency and duty cycle depend on R1, R2, and C values
+ and Frequency and duty cycle depend on R1, R2, and C values  
+
+### During the Charging Phase:
+During the charging phase, the output of the 555 timer is HIGH. The external capacitor charges through the two resistors R1 and R2 in series, from the supply voltage VCC. The voltage across the capacitor increases exponentially.
+
+This charging continues until the capacitor voltage reaches two-thirds of VCC (2/3 VCC). At this point, the upper comparator inside the 555 detects the threshold, and it resets the internal flip-flop, making the output go LOW.
+
+The time taken for the capacitor to charge from 1/3 VCC to 2/3 VCC is calculated using the formula: ton = 0.69*(R1+R2)*C2
+
+### During Discharging Phase:
+During the discharging phase, the output of the 555 timer is LOW. The discharge transistor inside the IC (connected to pin 7) turns ON, allowing the capacitor to discharge only through R2 to ground.
+
+The voltage across the capacitor drops exponentially during this time. Once the voltage falls to one-third of VCC (1/3 VCC), the lower comparator triggers and sets the flip-flop, causing the output to go HIGH again and restarting the charging cycle.
+
+The time taken for the capacitor to discharge from 2/3 VCC to 1/3 VCC is given by: toff = 0.69*R2*C2 
+
+
+
 
 
 
