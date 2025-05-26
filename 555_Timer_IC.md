@@ -120,7 +120,65 @@ During the discharging phase, the output of the 555 timer is LOW. The discharge 
 
 The voltage across the capacitor drops exponentially during this time. Once the voltage falls to one-third of VCC (1/3 VCC), the lower comparator triggers and sets the flip-flop, causing the output to go HIGH again and restarting the charging cycle.
 
-The time taken for the capacitor to discharge from 2/3 VCC to 1/3 VCC is given by: toff = 0.69*R2*C2 
+The time taken for the capacitor to discharge from 2/3 VCC to 1/3 VCC is given by: toff = 0.69*R2*C2  
+
+
+# Given question 
+Generate a waveform with pulse width of 0.5 ms under different trigger conditions using 555 timer IC.  
+
+## Circuit Design and calculation  
+
+
+
+![WhatsApp Image 2025-05-27 at 02 16 32_4e06a040](https://github.com/user-attachments/assets/e13d9902-7e8b-49e9-a63b-38d78cc23404) 
+
+![WhatsApp Image 2025-05-27 at 02 17 00_401b93ea](https://github.com/user-attachments/assets/c5b6df83-4b30-43cf-9179-e3bb0f9945da)  
+
+### Circuit diagram
+
+![image](https://github.com/user-attachments/assets/d3ce0498-3527-48b6-a022-b9e345a75f91) 
+
+### Transient analysis 
+
+connect the circuit as for the given circuit diagram and then run it in transient analsis mode 
+
+## CASE1:
+For ton = 0.4 ms and toff = 0.2 ms, Period = 0.5 ms 
+
+![image](https://github.com/user-attachments/assets/ce7d0e4d-5014-4738-a80b-c1bdbd4171c0) 
+
+as we see in the above waveform the First waveform is the output of monostable multivibrator with pulse width of 0.5 ms. and the 2nd one is output of positive clipper circuit and the third one is output of differentiator circuit and lastely is the output of  astable multivibrator. 
+
+## Case 2:
+For ton = 0.8 ms and toff = 0.3 ms, Period = 0.5 ms 
+
+![image](https://github.com/user-attachments/assets/91c3f471-844a-4124-a830-c50bf2ae2e0e) 
+
+as we see in the above waveform the First waveform is the output of monostable multivibrator with pulse width of 0.5 ms. and the 2nd one is output of positive clipper circuit and the third one is output of differentiator circuit and lastely is the output of  astable multivibrator. 
+
+
+## CASE3:
+
+For ton = 0.5 ms and toff = 0.2 ms, Period = 0.5 ms  
+
+![image](https://github.com/user-attachments/assets/7f45e656-95f1-4d65-9732-48247b1942dc)  
+
+as we see in the above waveform the First waveform is the output of monostable multivibrator with pulse width of 0.5 ms. and the 2nd one is output of positive clipper circuit and the third one is output of differentiator circuit and lastely is the output of  astable multivibrator.  
+
+ ## - if toff is > ton then we have to use inverter after the inverter circuit in order to reset before the next pulse.
+
+ 
+
+
+
+
+
+
+
+
+
+
+
 
 
 
