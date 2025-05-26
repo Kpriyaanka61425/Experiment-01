@@ -28,9 +28,50 @@ One input triggers it ON, another turns it OFF.
 
 ## CIRCUIT DIAGRAM AND CALCULATION
 
-![image](https://github.com/user-attachments/assets/967c008c-84f7-4dd6-aaf5-fa3812f71629) 
+![image](https://github.com/user-attachments/assets/967c008c-84f7-4dd6-aaf5-fa3812f71629)  
 
-![WhatsApp Image 2025-05-27 at 00 14 15_aebc1b1f](https://github.com/user-attachments/assets/2c03f979-432d-4db2-9553-e4499cfaafea)
+
+![WhatsApp Image 2025-05-27 at 00 14 15_aebc1b1f](https://github.com/user-attachments/assets/2c03f979-432d-4db2-9553-e4499cfaafea) 
+
+## Procedure 
+
+- first build the circuit in ltspice as per the circuit diagram as shown in above figure
+- and then select the suitable resistor and capacitor values as per your calculation
+- and go the configure analysis in that choose transient analysis with required time limit in milli seconds and run it
+- the waveforms will be generated on waveform window for this node you have selected in the circuit
+
+  
+
+## CASE:01
+## Transient Analysis 
+
+it is used  mainly to verify the generated signals with respect time domain 
+
+<img width="590" alt="image" src="https://github.com/user-attachments/assets/1eb96750-c88b-44ea-980e-6a7a6c43a305" />
+
+
+in the above image the first waveform represents Trigger input signal and 2nd waveform is signal at capcitor which is connected to 6th pin of the 555 Timer IC of treshold and the last one output waveform signal 
+
+#### from the above waveform we come to know that how the capacitor carges and discharges and also how the output triggers to hugh value according to the each input falling edge of time approximately 0.5ms in the above graph. 
+
+## CASE:02 
+
+for the repeated trigger inputs of PULSE(5 0 0.05m 0 0 0.05m 0.1m) across the trigger input 
+
+![image](https://github.com/user-attachments/assets/9f2373d0-d3c8-4ec6-aed5-1fc016674771) 
+
+ same as first waveform label but by the above image we came to know that for first falling edge of the trigger input the output goes high and also we can observe how the capicitor is charging and discharging according to input trigger 
+
+ 
+
+
+
+
+
+
+
+
+
 
 
 
