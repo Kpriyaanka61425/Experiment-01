@@ -165,7 +165,9 @@ For ton = 0.5 ms and toff = 0.2 ms, Period = 0.5 ms
 
 as we see in the above waveform the First waveform is the output of monostable multivibrator with pulse width of 0.5 ms. and the 2nd one is output of positive clipper circuit and the third one is output of differentiator circuit and lastely is the output of  astable multivibrator.  
 
- ## - if toff is > ton then we have to use inverter after the inverter circuit in order to reset before the next pulse.
+ ## - if toff is > ton then we have to use the inverter circuit in order to reset before the next pulse. 
+
+ 
 
  
 
