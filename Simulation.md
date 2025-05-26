@@ -14,12 +14,13 @@ The  structure of folded cascade OTA is shown in Fig. 1. NMOS is used as input d
 
 A fully differential architecture of folded cascade OTA effectively separates the signal and biasing paths, minimizing voltage headroom limitations and improving overall frequency response. Implemented in 180nm CMOS technology, the folded cascode OTA demonstrates superior performance in terms of gain-bandwidth product and power efficiency, making it ideal for high-speed and low-power analog applications.
 
-### CIRCUIT DIAGRAM BUILT IN LTSPICE
-
-![image](https://github.com/user-attachments/assets/cc3d2e6b-883d-4822-9fa7-cde79030f05e)
-
-
 ### SIMULATION RESULTS
+
+#### CIRCUIT DIAGRAM BUILT IN LTSPICE
+
+![image](https://github.com/user-attachments/assets/cc3d2e6b-883d-4822-9fa7-cde79030f05e) 
+
+#### Obtained waveform
 
 ![Screenshot 2025-05-09 183041](https://github.com/user-attachments/assets/729adcd7-a980-4ba9-be13-ac4f88b5b82e)
 
