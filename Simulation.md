@@ -16,11 +16,15 @@ A fully differential architecture of folded cascade OTA effectively separates th
 
 ### SIMULATION RESULTS
 
-#### CIRCUIT DIAGRAM BUILT IN LTSPICE
+#### CIRCUIT DIAGRAM BUILT IN LTSPICE 
 
-![image](https://github.com/user-attachments/assets/cc3d2e6b-883d-4822-9fa7-cde79030f05e) 
 
-#### Obtained waveform
+![image](https://github.com/user-attachments/assets/cc3d2e6b-883d-4822-9fa7-cde79030f05e)   
+
+
+
+#### Obtained waveform 
+
 
 ![Screenshot 2025-05-09 183041](https://github.com/user-attachments/assets/729adcd7-a980-4ba9-be13-ac4f88b5b82e)
 
