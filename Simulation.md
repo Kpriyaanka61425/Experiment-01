@@ -36,7 +36,11 @@ The DC gain is 37.049dB with phase margin of 89.32° and unity gain bandwidth (U
 | UGBW | 7.87 MHz |
 | CMRR | 296.5dB |
 | PSRR | 262.3dB |
-| Power Dissipation | 588.9µW |
+| Power Dissipation | 588.9µW | 
+
+In the ideal case simulated using LTspice, the folded cascade OTA achieves a Common-Mode Rejection Ratio (CMRR) of approximately 296.5 dB and a Power Supply Rejection Ratio (PSRR) of approximately 262.3 dB. These values are indicative of perfect matching and ideal biasing conditions, where the amplifier performs optimally with minimal distortion or noise interference from common-mode signals and power supply variations.
+
+
 
 #### ASPECT RATIOS FOR OTA TRANSISTORS
 
