@@ -119,4 +119,12 @@ architecture proves to be a viable solution for precision
 analog front-end circuits where gain, bandwidth, and power 
 efficiency are critical.
 
+
+### REFERENCES
+[1] B. Razavi, Design of Analog CMOS Integrated Circuits, 
+2nd ed., New York, NY, USA: McGraw-Hill, 2016. 
+
+[2] P. E. Allen and D. R. Holberg, CMOS Analog Circuit 
+Design, 3rd ed., New York, NY, USA: Oxford Univ. Press, 
+2012.
           
